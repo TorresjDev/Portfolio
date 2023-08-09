@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
+
+:root {
+	--accent-color: rgb(82, 0, 0);
+	--lightest-gray: rgb(244, 244, 244);
+	--light-gray: rgb(144, 144, 144);
+	--medium-gray: rgb(96, 96, 96);
+	--dark-gray: rgb(13, 13, 13);
+	--header-height: 40px;
+	--animation-duration: 200ms;
+	--animation-timing-curve: ease-in-out;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: maroon !important;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
