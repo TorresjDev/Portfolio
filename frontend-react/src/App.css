@@ -339,6 +339,59 @@ nav {
 	width: 100%;
 }
 
+/* Connect  */
+
+/* Contact section */
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 80vh;
+	padding: 0 2rem;
+	background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+	font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+	.contact-section-header > h2 {
+		font-size: 4rem;
+	}
+}
+
+.contact-section-header > p {
+	font-style: italic;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.contact-details {
+	font-size: 1.5rem !important;
+	text-shadow: 2px 2px 1px #2a2a2a;
+	transition: transform 0.6s ease-out;
+	color: #acacac82 !important;
+}
+
+.contact-details i:hover {
+	color: goldenrod;
+}
+
+.contact-details:hover {
+	font-size: 1.7rem !important;
+	transform: translateY(2px);
+	color: silver !important;
+}
+
 /* Footer */
 footer p {
 	text-align: right;

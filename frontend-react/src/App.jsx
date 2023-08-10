@@ -6,6 +6,7 @@ import SideBar from "./components/SideBar";
 import PerviousWork from "./components/section/PerviousWork";
 import Experience from "./components/section/Experience";
 import Contact from "./components/Contact";
+import Connect from "./components/Connect";
 
 function App() {
 	return (
@@ -17,7 +18,12 @@ function App() {
 					<IntroSection />
 					<Experience />
 					<PerviousWork />
-					<Contact />
+					<section className="my-3">
+						<Connect />
+					</section>
+					<section className="mt-1">
+						<Contact />
+					</section>
 				</main>
 			</div>
 			<Footer />
