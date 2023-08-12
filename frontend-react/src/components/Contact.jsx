@@ -35,10 +35,11 @@ const Contact = () => {
 	};
 
 	return (
-		<form className="bg-dark p-3 shadow border-2 rounded fw-bold" ref={form} onSubmit={sendEmail}>
+		<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={form} onSubmit={sendEmail}>
 			<h2>Send me a message 👇</h2>
 			<div className="row pt-2">
-				<div className="col-md-4 mx-auto">
+				<div className="col-md-1 ms-4 "></div>
+				<div className="col-md-4 ms-4">
 					<div className="input-group mb-3">
 						<span className="input-group-text" id="basic-addon1">
 							Name
@@ -46,7 +47,7 @@ const Contact = () => {
 						<input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" />
 					</div>
 				</div>
-				<div className="col-md-5 mx-auto">
+				<div className="col-md-5 ms-1">
 					<div className="input-group mb-3">
 						<span className="input-group-text" id="basic-addon1">
 							Email
@@ -56,13 +57,14 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<div className="form-group m-2">
-				<label className="ps-3" htmlFor="message">
-					Message
-				</label>
-				<div as="textarea" name="message" className="form-control " id="message" rows="3"></div>
+			<div className="col-md-9 mx-auto">
+				<div className="input-group">
+					<span className="input-group-text">With textarea</span>
+					<textarea name="message" className="form-control " id="message" rows="3" aria-label="With textarea"></textarea>
+				</div>
 			</div>
-			<button variant="outline-primary" className="contact-submit my-3" value="Send" type="submit">
+
+			<button variant="outline-primary" className="contact-submit my-3 btn btn-success" value="Send" type="submit">
 				Send
 			</button>
 		</form>

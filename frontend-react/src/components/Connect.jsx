@@ -5,7 +5,7 @@ function Connect() {
 		<div>
 			<div className="contact-section-header">
 				<h2>Let's work together...</h2>
-				<p>Let us connect</p>
+				<p>connections</p>
 			</div>
 			<div className="contact-links">
 				<a href="https://www.linkedin.com/in/torresdev/" target="_blank" className="btn contact-details">
