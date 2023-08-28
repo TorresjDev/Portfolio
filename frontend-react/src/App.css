@@ -147,11 +147,11 @@ nav {
 
 /*? SideBar Start*/
 .sidebar {
-	height: 100%;
+	/* height: 100%; */
 	width: 100%;
-	flex-shrink: 0;
+	/* flex-shrink: 0; */
 	background-color: #3c3c3c;
-	overflow: hidden;
+	/* overflow: hidden; */
 	width: 69px;
 	border-right: 1px solid var(--light-gray);
 	display: flex;
@@ -189,13 +189,6 @@ nav {
 	transition: opacity var(--animation-duration) var(--animation-timing-curve);
 }
 
-.sidebar.open .hidden-sidebar {
-	width: 100%;
-	height: auto;
-	opacity: 1;
-	margin: auto 2em auto 0.5em;
-}
-
 .sidebar .top-sidebar {
 	display: flex;
 	flex-direction: column;
@@ -221,13 +214,6 @@ nav {
 	transition: var(--animation-duration) var(--animation-timing-curve);
 }
 
-.sidebar.open .channel-logo {
-	width: 90px;
-	height: 90px;
-	margin-top: 1rem;
-	text-align: center;
-}
-
 .middle-sidebar {
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -248,10 +234,6 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	list-style: none;
-}
-
-.sidebar.open .sidebar-link {
-	justify-content: flex-start;
 }
 
 .sidebar-icon {
@@ -289,7 +271,7 @@ nav {
 }
 
 .sidebar-list-item.active {
-	fill: var(--accent-color);
+	/* fill: var(--accent-color); */
 	background-color: var(--lightest-gray);
 }
 
@@ -299,16 +281,11 @@ nav {
 
 .sidebar-list-item.active::before {
 	content: "";
-	background-color: var(--accent-color);
+	/* background-color: var(--accent-color); */
 	height: 100%;
 	left: 0;
 	width: 3px;
 	position: absolute;
-}
-
-.sidebar.open {
-	width: 12%;
-	padding: 0;
 }
 
 .your-channel {
@@ -330,6 +307,11 @@ nav {
 	transition: height var(--animation-duration) var(--animation-timing-curve);
 }
 
+.sidebar.open {
+	width: 12%;
+	padding: 0;
+}
+
 .sidebar.open .top-sidebar {
 	height: 125px;
 }
@@ -337,6 +319,25 @@ nav {
 .sidebar .top-sidebar .hidden-sidebar {
 	text-align: center;
 	width: 100%;
+}
+
+.sidebar.open .hidden-sidebar {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	margin: auto 2em auto 0.5em;
+}
+
+.sidebar.open .channel-logo {
+	width: 90px;
+	height: 90px;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.sidebar.open .sidebar-link {
+	justify-content: flex-start;
+	margin: 0 0 0 -0.6em;
 }
 
 /* Connect  */
@@ -356,6 +357,11 @@ nav {
 
 .contact-section-header > h2 {
 	font-size: 6rem;
+}
+
+.contact-section-header > p {
+	font-size: 1.2rem;
+	margin-left: 4.5rem;
 }
 
 @media (max-width: 28.75em) {
