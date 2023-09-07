@@ -136,7 +136,7 @@ nav {
 	text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a {
 	background-color: #ddd;
 	color: #820000;
 }
@@ -151,6 +151,7 @@ nav {
 	width: 100%;
 	/* flex-shrink: 0; */
 	background-color: #3c3c3c;
+	z-index: 1;
 	/* overflow: hidden; */
 	width: 69px;
 	border-right: 1px solid var(--light-gray);

@@ -1,11 +1,11 @@
 import React from "react";
+import SkillRotator from "./SkillRotator";
 
 function Experience() {
 	return (
 		<div className="container-fluid">
-			<div className="row">
-				<div className="col-md-10">Hello Pre Work</div>
-			</div>
+			<h1>Skill rotator</h1>
+			<SkillRotator />
 		</div>
 	);
 }
