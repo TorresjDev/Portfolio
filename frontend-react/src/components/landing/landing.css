@@ -39,3 +39,11 @@ video {
 	text-shadow: 1px 1px black;
 	font-family: "Silkscreen";
 }
+
+.content .resume,
+.content .contact-me {
+	border-radius: 6px 6px 6px 6px;
+	border: 3px groove #170000;
+	font-family: "Silkscreen";
+	font-size: 0.82rem;
+}

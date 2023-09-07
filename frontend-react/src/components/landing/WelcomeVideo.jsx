@@ -8,16 +8,13 @@ function WelcomeVideo() {
 			{/* <div className="overlay"></div> */}
 			<video src={welVid} autoPlay loop muted />
 			<div className="content">
-				<aside>hello</aside>
-				<a href=""></a>
+				{/* <a href=""></a> */}
 				<h2>Jesus Torres</h2>
 				<p>Software Engineer</p>
-				<div className="row">
-					<div className="btn btn-outline-secondary">
-						<p>Resume</p>
-					</div>
-					<div className="btn btn-outline-success">
-						<p>Contact Me</p>
+				<div className="container">
+					<div className="row">
+						<div className="mx-auto my-2 col-md-1 btn btn-secondary resume">Resume</div>
+						<div className="mx-auto my-2 col-md-2 px-1 btn btn-dark contact-me">Contact Me</div>
 					</div>
 				</div>
 			</div>
