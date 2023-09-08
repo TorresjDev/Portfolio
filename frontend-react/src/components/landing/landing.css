@@ -2,7 +2,7 @@ video {
 	width: 99.9%;
 	height: 88%;
 	object-fit: fill;
-	border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 3px 6px px;
 	border: 6px groove #170000;
 	float: left;
 }
@@ -36,8 +36,9 @@ video {
 	color: silver;
 	font-weight: bolder;
 	font-size: 2.1rem;
-	text-shadow: 1px 1px black;
+	text-shadow: 1px 1px#170000;
 	font-family: "Silkscreen";
+	text-shadow: -2px 3px #170000, 4px -2px #170000, 4px -2px #170000, 4px -2px #170000;
 }
 
 .content .resume,

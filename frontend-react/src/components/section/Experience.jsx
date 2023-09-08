@@ -3,8 +3,7 @@ import SkillRotator from "./SkillRotator";
 
 function Experience() {
 	return (
-		<div className="container-fluid">
-			<h1>Skill rotator</h1>
+		<div className="container-fluid my-3 py-5 bg-light">
 			<SkillRotator />
 		</div>
 	);

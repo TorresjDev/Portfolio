@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import welVid from "../../vid/sunrise.mp4";
 import "./landing.css";
 
@@ -13,7 +14,11 @@ function WelcomeVideo() {
 				<p>Software Engineer</p>
 				<div className="container">
 					<div className="row">
-						<div className="mx-auto my-2 col-md-1 btn btn-secondary resume">Resume</div>
+						<div className="mx-auto my-2 col-md-1">
+							<Link href="../../pdf/Software-Engineer-Jesus-Torres.pdf" download className="btn btn-secondary resume">
+								Resume
+							</Link>
+						</div>
 						<div className="mx-auto my-2 col-md-2 px-1 btn btn-dark contact-me">Contact Me</div>
 					</div>
 				</div>
