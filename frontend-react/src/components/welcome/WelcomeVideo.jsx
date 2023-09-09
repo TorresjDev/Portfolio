@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import welVid from "../../vid/sunrise.mp4";
-import "./landing.css";
+import "./wel-vid.css";
 
 function WelcomeVideo() {
 	return (

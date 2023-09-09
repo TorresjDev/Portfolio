@@ -57,17 +57,17 @@ function SkillRotator() {
 		// { name: "Python", link: "", img: "A versatile programming language used in various domains." }
 	];
 
-	const currentSkill = skills.map((skill, index) => {
+	const skillElements = skills.map((skill, index) => {
 		return (
-			<a key={`${skill} - ${index}`} className="col-md-1 skill" href={skill.link} target="_blank">
-				<img src={skill.img} alt={skill.name} height="50" />
+			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank">
+				<img src={skill.img} alt={skill.name} height="45" />
 			</a>
 		);
 	});
 
 	return (
-		<div className="skill-rotator-container">
-			<div className="rotate">{currentSkill}</div>
+		<div className="skill-rotator-container bg-light pt-2 pb-1">
+			<div className="rotate py-2">{skillElements}</div>
 		</div>
 	);
 }

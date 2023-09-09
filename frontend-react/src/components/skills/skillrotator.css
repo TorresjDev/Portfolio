@@ -1,0 +1,46 @@
+@keyframes marquee {
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 100%;
+	}
+	/* 0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	} */
+}
+
+.skill-rotator-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 60px;
+}
+
+.rotate {
+	display: flex;
+	animation: marquee 24s linear infinite;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.rotate:hover {
+	animation-play-state: paused;
+}
+
+.skill {
+	width: 80px;
+	height: 4.5vh;
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.skill:hover {
+	transform: scale(1.2);
+}
