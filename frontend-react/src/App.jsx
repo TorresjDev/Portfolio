@@ -5,7 +5,6 @@ import SideBar from "./components/SideBar";
 import PerviousWork from "./components/PerviousWork";
 import Contact from "./components/Contact";
 import Connect from "./components/Connect";
-// import Landing from "./components/Landing";
 import SkillRotator from "./components/skills/SkillRotator";
 import WelcomeVideo from "./components/welcome/WelcomeVideo";
 
