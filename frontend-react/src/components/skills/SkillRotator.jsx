@@ -66,7 +66,7 @@ function SkillRotator() {
 	});
 
 	return (
-		<div className="skill-rotator-container bg-light pt-2 pb-1">
+		<div className="skill-rotator-container bg-light">
 			<div className="rotate py-2">{skillElements}</div>
 		</div>
 	);

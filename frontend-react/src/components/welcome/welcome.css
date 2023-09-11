@@ -2,7 +2,7 @@ video {
 	width: 99.9%;
 	height: 100%;
 	object-fit: fill;
-	border-radius: 6px 3px 6px px;
+	border-radius: 6px 2.6px 6px 3px;
 	border: 6px groove #170000;
 	float: left;
 }
@@ -47,4 +47,11 @@ video {
 	border: 3px groove #170000;
 	font-family: "Silkscreen";
 	font-size: 0.82rem;
+}
+
+.content a i {
+	color: maroon;
+	margin-top: 9px;
+	font-size: 2rem;
+	text-shadow: 2px 2px 1px #2a2a2a;
 }
