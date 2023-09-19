@@ -36,7 +36,7 @@ const Contact = () => {
 
 	return (
 		<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={form} onSubmit={sendEmail}>
-			<h2>Send me a message 👇</h2>
+			<h2>Contact Me 👇</h2>
 			<div className="row pt-2">
 				<div className="col-md-1 ms-4 "></div>
 				<div className="col-md-4 ms-4">
@@ -59,8 +59,15 @@ const Contact = () => {
 
 			<div className="col-md-9 mx-auto">
 				<div className="input-group">
-					<span className="input-group-text">With textarea</span>
-					<textarea name="message" className="form-control " id="message" rows="3" aria-label="With textarea"></textarea>
+					<span className="input-group-text">Write Message</span>
+					<textarea
+						name="message"
+						className="form-control "
+						id="message"
+						rows="3"
+						aria-label="With textarea"
+						placeholder="Enter your email"
+					></textarea>
 				</div>
 			</div>
 
