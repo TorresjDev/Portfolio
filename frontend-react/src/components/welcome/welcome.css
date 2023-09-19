@@ -39,6 +39,7 @@ video {
 	text-shadow: 1px 1px#170000;
 	font-family: "Silkscreen";
 	text-shadow: -2px 3px #170000, 4px -2px #170000, 4px -2px #170000, 4px -2px #170000;
+	text-decoration: underline;
 }
 
 .content .resume,
@@ -54,4 +55,12 @@ video {
 	margin-top: 9px;
 	font-size: 2rem;
 	text-shadow: 2px 2px 1px #2a2a2a;
+}
+
+.content a i:hover {
+	color: silver;
+}
+
+.wel-row {
+	margin-left: 1.2rem !important;
 }

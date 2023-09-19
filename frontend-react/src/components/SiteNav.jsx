@@ -27,7 +27,10 @@ function SiteNav() {
 							</button>
 							<div className="dropdown-content">
 								<Link className="nav-link" to="/">
-									Home
+									Contact Me
+								</Link>
+								<Link className="nav-link" to="/">
+									Resume
 								</Link>
 							</div>
 						</div>
