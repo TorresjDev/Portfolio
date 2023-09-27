@@ -9,10 +9,18 @@ function Connect() {
 			</div>
 			<div className="contact-links">
 				<a href="https://www.linkedin.com/in/torresdev/" target="_blank" className="btn contact-details">
-					<i className="fab fa-linkedin"></i> torresdev
+					{/* <button className="btn"> */}
+					<i className="fab fa-linkedin" data-bs-toggle="tooltip" data-bs-title="torresdev"></i>
+					{/* </button> */}
 				</a>
 				<a id="profile-link" href="https://github.com/TorresjDev" target="_blank" className="btn contact-details">
-					<i className="fab fa-github"></i> TorresjDev
+					<i className="fab fa-github" data-bs-toggle="tooltip" data-bs-title="torresdev"></i>
+				</a>
+				<a id="profile-link" href="https://codepen.io/TorresjDev" target="_blank" className="btn contact-details">
+					<i className="fa fa-codepen" data-bs-toggle="tooltip" data-bs-title="torresdev"></i>
+				</a>
+				<a id="profile-link" href="https://codepen.io/TorresjDev" target="_blank" className="btn contact-details">
+					<img src="../img/wakatime.png" alt="" srcset="" />
 				</a>
 				{/* <a href="mailto:j.torres3.dev@gmail.com" className="btn contact-details">
 					<i className="fa fa-paper-plane"></i> j.torres3.dev@gmail.com
