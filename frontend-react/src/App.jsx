@@ -2,7 +2,7 @@ import "./app.css";
 import SiteNav from "./components/SiteNav";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
-import PerviousWork from "./components/PerviousWork";
+import PerviousWork from "./components/prework/PerviousWork";
 import Contact from "./components/Contact";
 import Connect from "./components/Connect";
 import SkillRotator from "./components/skills/SkillRotator";

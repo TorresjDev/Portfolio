@@ -1,0 +1,19 @@
+.pre-work {
+	max-height: 75% !important;
+	height: 75%;
+}
+
+.pre-work .carousel-item {
+	max-height: 75% !important;
+	height: 75%;
+}
+
+.pre-work .carousel-item > img {
+	max-height: 100% !important;
+	height: 25rem !important;
+	object-fit: fill;
+}
+
+.pre-work .carousel-item > .carousel-caption {
+	background: rgba(128, 0, 0, 0.75);
+}
