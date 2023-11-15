@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-function SideBar() {
-	const [state, setState] = useState(false);
-
-	const handleSideBar = () => {
-		setState(true);
-	};
-
+function SideBar({ isOpen, toggleSidebar, closeSidebar }) {
 	return (
-		<aside className={state ? "sidebar open" : "sidebar"} onMouseLeave={() => setState(false)}>
+		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar my-1 py-1">
-				<div className="channel-logo" onClick={handleSideBar}>
+				<div className="channel-logo" onClick={toggleSidebar}>
 					<div className="channel-symbol" title="Expand Sidebar">
 						<div className="material-symbols-outlined " title="Expand Sidebar">
 							format_letter_spacing
@@ -40,12 +34,12 @@ function SideBar() {
 						</Link>
 					</li> */}
 					<li className="sidebar-list-item">
-						<Link to="" className="sidebar-link">
+						<a href="/pdf/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
 							<div className="material-symbols-outlined" title="">
 								post_add
 							</div>
 							<div className="hidden-sidebar">Resume</div>
-						</Link>
+						</a>
 					</li>
 					<li className="sidebar-list-item">
 						<Link to="" className="sidebar-link">

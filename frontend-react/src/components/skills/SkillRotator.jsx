@@ -57,7 +57,9 @@ function SkillRotator() {
 		// { name: "Python", link: "", img: "A versatile programming language used in various domains." }
 	];
 
-	const skillElements = skills.map((skill, index) => {
+	const doubledSkills = [...skills, ...skills]; // Duplicate the skills array
+
+	const skillElements = doubledSkills.map((skill, index) => {
 		return (
 			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank">
 				<img src={skill.img} alt={skill.name} height="45" />

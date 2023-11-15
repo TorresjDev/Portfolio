@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function SiteNav() {
 	return (
-		<nav className="navbar navbar-expand-lg bg-gradient fixed-top">
+		<nav className="navbar navbar-expand-lg bg-gradient fixed-top d-flex justify-content-between">
 			<img src={devLogo} className="dev-logo rounded" alt="logo" />
-			<div className="container-fluid">
+			<div>
 				<ul className="navbar-nav mb-2 mb-lg-0 ms-1">
 					<li className="nav-item mx-1"></li>
 				</ul>
@@ -26,7 +26,7 @@ function SiteNav() {
 								</div>
 							</button>
 							<div className="dropdown-content">
-								<Link className="nav-link" to="/">
+								<Link className="nav-link" to="/contact">
 									Contact Me
 								</Link>
 								<Link className="nav-link" to="/">

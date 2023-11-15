@@ -1,16 +1,16 @@
 @keyframes marquee {
-	0% {
+	/* 0% {
 		left: -100%;
 	}
 	100% {
 		left: 100%;
-	}
-	/* 0% {
-		transform: translateX(0%);
+	} */
+	0% {
+		transform: translateX(-50%);
 	}
 	100% {
-		transform: translateX(-50%);
-	} */
+		transform: translateX(0%);
+	}
 }
 
 .skill-rotator-container {
@@ -35,9 +35,9 @@
 }
 
 .skill {
-	width: 80px;
+	width: 82px;
 	height: 4.5vh;
-	margin-right: 15px;
+	margin-right: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -46,4 +46,5 @@
 
 .skill:hover {
 	transform: scale(1.2);
+	transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
