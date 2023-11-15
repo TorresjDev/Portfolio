@@ -173,7 +173,7 @@ nav {
 
 .sidebar ::-webkit-scrollbar {
 	/* box-shadow: inset 0 0 5px silver; */
-	width: 1rem;
+	width: 0.6rem;
 	border-radius: 10px;
 }
 
@@ -186,6 +186,7 @@ nav {
 	background: #820000;
 	/* width: 1rem; */
 	border-radius: 10px;
+	transition: border-radius 0.5s ease-in-out;
 }
 
 .sidebar .hidden-sidebar {
@@ -201,15 +202,17 @@ nav {
 }
 
 .channel-symbol {
-	font-size: 33px;
+	/* font-size: 33px; */
 	/* width: 100%; */
 	color: #820000;
 	-webkit-text-stroke: 1px #000000;
+	transition: -webkit-text-stroke 0.5s ease-in-out;
 }
 
 .channel-symbol:hover {
 	color: #c0c0c0;
 	-webkit-text-stroke: 1px #820000;
+	transition: -webkit-text-stroke 0.5s ease-in-out;
 }
 
 .sidebar .channel-logo {
@@ -229,7 +232,12 @@ nav {
 .middle-sidebar,
 .bottom-sidebar {
 	width: 100%;
-	padding: 0.5rem 5rem 0.5rem 0;
+	padding: 0.5rem 4.5rem 0.5rem 0;
+}
+
+.sidebar.open .middle-sidebar {
+	width: 100%;
+	padding: 0.5rem 8rem 0.5rem 0;
 }
 
 .sidebar-list {
@@ -256,6 +264,7 @@ nav {
 .sidebar-list .hidden-sidebar:hover {
 	color: #820000;
 	font-weight: bold;
+	transition: font-weight 0.033s ease-out;
 }
 
 .sidebar-link {
@@ -287,9 +296,9 @@ nav {
 .sidebar-list-item.active::before {
 	content: "";
 	/* background-color: var(--accent-color); */
-	height: 100%;
+	/* height: 100%;
 	left: 0;
-	width: 3px;
+	width: 3px; */
 	position: absolute;
 }
 

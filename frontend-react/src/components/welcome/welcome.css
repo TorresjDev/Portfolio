@@ -5,6 +5,7 @@ video {
 	border-radius: 6px 2.6px 6px 3px;
 	border: 6px groove #170000;
 	float: left;
+	transition: object-fit 0.5s ease-in-out;
 }
 
 .welcome-vid {
@@ -22,6 +23,15 @@ video {
 	justify-content: center;
 	align-items: center;
 	padding-top: 1rem;
+	transition: width 0.5s ease-in-out;
+	transition: left ease-in-out;
+}
+
+.content.open {
+	left: 10%;
+	width: 90%;
+	transition: width ease-in-out; /* Smooth transition for the width property */
+	transition: left ease-in-out; /* Smooth transition for the width property */
 }
 
 .content h2 {
