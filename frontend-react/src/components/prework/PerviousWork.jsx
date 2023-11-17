@@ -21,9 +21,13 @@ function PerviousWork() {
 	]);
 
 	const carouselWork = (data, index) => {
-		console.log("hello");
+		// console.log("hello", { data, index, date: Date.now() });
 		return (
-			<div className={`carousel-item ${index === 0 ? "active" : ""}`} data-bs-interval="3000">
+			<div
+				className={`carousel-item ${index === 0 ? "active" : ""}`}
+				data-bs-interval="3000"
+				key={`${index}) ${data.title} - ${Date.now()}`}
+			>
 				<img src={data.img} className=" mx-auto d-block" alt="..." />
 				<div className="carousel-caption d-none d-md-block">
 					<h5>{data.title}</h5>
