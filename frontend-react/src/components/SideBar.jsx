@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SideBar({ isOpen, toggleSidebar, closeSidebar }) {
+function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar my-1 py-1">
 				<div className="channel-logo" onClick={toggleSidebar}>
 					<div className="channel-symbol" title="Expand Sidebar">
-						<div className="material-symbols-outlined " title="Expand Sidebar">
+						<div className="material-symbols-outlined" title="Expand Sidebar">
 							format_letter_spacing
 						</div>
 					</div>
@@ -58,12 +58,12 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar }) {
 						</Link>
 					</li> */}
 					<li className="sidebar-list-item">
-						<Link to="" className="sidebar-link">
+						<a className="sidebar-link contact" onClick={scrollOnClick}>
 							<div className="material-symbols-outlined" title="">
 								perm_contact_calendar
 							</div>
 							<div className="hidden-sidebar">Reach Out</div>
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</div>
