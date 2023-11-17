@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 
@@ -6,13 +6,13 @@ const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const emailJSKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-const Contact = () => {
-	const form = useRef();
+const Contact = React.forwardRef((props, ref) => {
+	// const form = useRef();
 	console.log({ serviceId, templateId, emailJSKey });
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm(serviceId, templateId, form.current, emailJSKey).then(
+		emailjs.sendForm(serviceId, templateId, ref.current, emailJSKey).then(
 			(result) => {
 				console.log(result.text);
 				console.log("message sent");
@@ -36,7 +36,8 @@ const Contact = () => {
 
 	return (
 		<div className="container mb-3">
-			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={form} onSubmit={sendEmail}>
+			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
+				{/* ref={form} */}
 				<h2>Contact Me 👇</h2>
 				<div className="row pt-2">
 					<div className="col-md-1 ms-3 "></div>
@@ -45,7 +46,7 @@ const Contact = () => {
 							<span className="input-group-text" id="basic-addon1">
 								Name
 							</span>
-							<input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" />
+							<input type="text" className="form-control" id="name" name="name" placeholder="Enter your name..." />
 						</div>
 					</div>
 					<div className="col-md-5 ms-1">
@@ -53,21 +54,21 @@ const Contact = () => {
 							<span className="input-group-text" id="basic-addon1">
 								Email
 							</span>
-							<input type="text" className="form-control" id="email" name="email" placeholder="Enter your email" />
+							<input type="text" className="form-control" id="email" name="email" placeholder="Enter your email..." />
 						</div>
 					</div>
 				</div>
 
 				<div className="col-md-9 mx-auto">
 					<div className="input-group">
-						<span className="input-group-text">Write Message</span>
+						<span className="input-group-text">Message</span>
 						<textarea
 							name="message"
 							className="form-control "
 							id="message"
 							rows="3"
 							aria-label="With textarea"
-							// placeholder="Enter your email"
+							placeholder="Write message here..."
 						></textarea>
 					</div>
 				</div>
@@ -78,6 +79,6 @@ const Contact = () => {
 			</form>
 		</div>
 	);
-};
+});
 
 export default Contact;

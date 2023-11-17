@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
 	return (
-		<footer className="bg-dark text-light footer">
+		<footer className=" text-light footer">
 			<div className="container">
 				<div className="row">
-					<p className="pt-2">Since 2020</p>
+					<p className="pt-2">Coding Since - Jan 2021</p>
 				</div>
 			</div>
 		</footer>

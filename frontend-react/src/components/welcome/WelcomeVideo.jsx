@@ -3,7 +3,7 @@ import welVid from "../../vid/sunrise.mp4";
 import "./welcome.css";
 // import WelcomeContent from "./WelcomeContent";
 
-function WelcomeVideo({ isOpen }) {
+function WelcomeVideo({ isOpen, scrollContact }) {
 	return (
 		<div className="welcome-vid">
 			{/* <div className="overlay"></div> */}
@@ -29,7 +29,9 @@ function WelcomeVideo({ isOpen }) {
 								<i className="fab fa-github"></i>
 							</a>
 						</div>
-						<div className="mx-auto my-2 col-md-2 px-1 btn btn-secondary contact-me">Contact Me</div>
+						<div className="mx-auto my-2 col-md-2 px-1 btn btn-secondary contact-me" onClick={scrollContact}>
+							Contact Me
+						</div>
 					</div>
 				</div>
 			</div>
