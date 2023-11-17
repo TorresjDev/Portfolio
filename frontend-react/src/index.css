@@ -25,7 +25,7 @@ body {
 ::-webkit-scrollbar {
 	width: 0.5rem;
 	border-radius: 39px;
-	/* background: snow; */
+	background: #3c3c3c;
 }
 
 ::-webkit-scrollbar-thumb {

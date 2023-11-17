@@ -20,7 +20,7 @@ function Connect() {
 					<i className="fa fa-codepen" data-bs-toggle="tooltip" data-bs-title="torresdev"></i>
 				</a>
 				<a id="profile-link" href="https://codepen.io/TorresjDev" target="_blank" className="btn contact-details">
-					<img src="../img/wakatime.png" alt="" srcset="" />
+					<img src="../img/wakatime.png" alt="" srcSet="" />
 				</a>
 				{/* <a href="mailto:j.torres3.dev@gmail.com" className="btn contact-details">
 					<i className="fa fa-paper-plane"></i> j.torres3.dev@gmail.com
