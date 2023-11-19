@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
-			<div className="top-sidebar my-1 py-1">
+			<div className="top-sidebar">
 				<div className="hidden-sidebar your-channel">{}</div>
 				<div className="hidden-sidebar channel-name">Jesus Torres</div>
 			</div>

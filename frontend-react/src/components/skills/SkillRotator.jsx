@@ -1,5 +1,6 @@
 import React from "react";
 import "./skillrotator.css";
+import Tooltip from "../tooltip/Tooltip";
 
 function SkillRotator() {
 	const skills = [
@@ -63,6 +64,7 @@ function SkillRotator() {
 		return (
 			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank">
 				<img src={skill.img} alt={skill.name} height="45" />
+				<Tooltip content={skill.name} />
 			</a>
 		);
 	});
