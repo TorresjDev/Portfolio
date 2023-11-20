@@ -72,5 +72,6 @@ video {
 }
 
 .wel-row {
-	margin-left: 1.2rem !important;
+	justify-content: space-evenly;
+	/* margin-left: 1.2rem !important; */
 }

@@ -28,7 +28,7 @@ function PerviousWork() {
 				data-bs-interval="3000"
 				key={`${index}) ${data.title} - ${Date.now()}`}
 			>
-				<img src={data.img} className=" mx-auto d-block" alt="..." />
+				<img src={data.img} className=" mx-auto d-block rounded" alt="..." />
 				<div className="carousel-caption d-none d-md-block">
 					<h5>{data.title}</h5>
 					<p>{data.description}</p>

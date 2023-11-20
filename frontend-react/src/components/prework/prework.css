@@ -10,8 +10,9 @@
 
 .pre-work .carousel-item > img {
 	max-height: 100% !important;
-	height: 25rem !important;
+	height: 23rem !important;
 	object-fit: fill;
+	width: 65%;
 }
 
 .pre-work .carousel-item > .carousel-caption {

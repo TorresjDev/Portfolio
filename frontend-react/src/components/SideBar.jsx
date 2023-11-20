@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
-			<div className="top-sidebar my-1 py-1">
+			<div className="top-sidebar">
 				<div className="hidden-sidebar your-channel">{}</div>
 				<div className="hidden-sidebar channel-name">Jesus Torres</div>
 			</div>
@@ -27,14 +27,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 							<div className="hidden-sidebar">About Me</div>
 						</Link>
 					</li>
-					{/* <li className="sidebar-list-item ">
-						<Link to="" className="sidebar-link">
-							<div className="material-symbols-outlined" title="">
-								public
-							</div>
-							<div className="hidden-sidebar">Public</div>
-						</Link>
-					</li> */}
+
 					<li className="sidebar-list-item">
 						<a href="/pdf/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
 							<div className="material-symbols-outlined" title="">

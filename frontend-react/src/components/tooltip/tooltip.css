@@ -1,0 +1,25 @@
+.skill {
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+}
+
+.tooltip {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #555;
+	color: white;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 6px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.skill:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}

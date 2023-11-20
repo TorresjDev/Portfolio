@@ -1,18 +1,13 @@
 import React from "react";
 
-function Tooltip() {
+function Tooltip(props) {
+	// console.log(Tooltip, { props });
+
 	return (
-		<button
-			type="button"
-			class="btn btn-secondary"
-			data-bs-toggle="tooltip"
-			data-bs-placement="top"
-			title="Tooltip on top"
-			animation="true"
-		>
-			Tooltip on top
-		</button>
+		<div className="tooltip" role="tooltip">
+			{props.content}
+		</div>
 	);
 }
 
-export default Tooltip;
+export default React.memo(Tooltip);
