@@ -24,6 +24,7 @@ function App() {
 	};
 
 	const scrollOnClick = () => {
+		console.log("scrollOnClick", contactRef);
 		contactRef.current.scrollIntoView({ behavior: "smooth" });
 	};
 

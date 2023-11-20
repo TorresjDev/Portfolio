@@ -27,14 +27,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 							<div className="hidden-sidebar">About Me</div>
 						</Link>
 					</li>
-					{/* <li className="sidebar-list-item ">
-						<Link to="" className="sidebar-link">
-							<div className="material-symbols-outlined" title="">
-								public
-							</div>
-							<div className="hidden-sidebar">Public</div>
-						</Link>
-					</li> */}
+
 					<li className="sidebar-list-item">
 						<a href="/pdf/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
 							<div className="material-symbols-outlined" title="">

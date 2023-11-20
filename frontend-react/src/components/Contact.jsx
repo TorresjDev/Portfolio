@@ -7,11 +7,9 @@ const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const emailJSKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const Contact = React.forwardRef((props, ref) => {
-	// const form = useRef();
 	console.log({ serviceId, templateId, emailJSKey });
 	const sendEmail = (e) => {
 		e.preventDefault();
-
 		emailjs.sendForm(serviceId, templateId, ref.current, emailJSKey).then(
 			(result) => {
 				console.log(result.text);
@@ -35,22 +33,20 @@ const Contact = React.forwardRef((props, ref) => {
 	};
 
 	return (
-		<div className="container mb-3">
+		<div className="container-fluid mb-3 contact">
+			<h2>Contact Me 👇</h2>
 			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
-				{/* ref={form} */}
-				<h2>Contact Me 👇</h2>
-				<div className="row pt-2">
-					<div className="col-md-1 ms-3 "></div>
-					<div className="col-md-4 ms-4">
-						<div className="input-group mb-3">
+				<div className="row pt-2 mx-auto">
+					<div className="col-lg-6 col-md-5 col-sm-8">
+						<div className="input-group">
 							<span className="input-group-text" id="basic-addon1">
 								Name
 							</span>
 							<input type="text" className="form-control" id="name" name="name" placeholder="Enter your name..." />
 						</div>
 					</div>
-					<div className="col-md-5 ms-1">
-						<div className="input-group mb-3">
+					<div className="col-lg-6 col-md-6 col-sm-9">
+						<div className="input-group">
 							<span className="input-group-text" id="basic-addon1">
 								Email
 							</span>
@@ -58,8 +54,7 @@ const Contact = React.forwardRef((props, ref) => {
 						</div>
 					</div>
 				</div>
-
-				<div className="col-md-9 mx-auto">
+				<div className="col-lg-10 col-md-9 col-sm-10 mx-auto">
 					<div className="input-group">
 						<span className="input-group-text">Message</span>
 						<textarea
@@ -72,7 +67,6 @@ const Contact = React.forwardRef((props, ref) => {
 						></textarea>
 					</div>
 				</div>
-
 				<button variant="outline-primary" className="contact-submit my-3 btn btn-success" value="Send" type="submit">
 					Send
 				</button>
