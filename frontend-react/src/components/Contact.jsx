@@ -37,7 +37,7 @@ const Contact = React.forwardRef((props, ref) => {
 			<h2>Contact Me 👇</h2>
 			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
 				<div className="row pt-2 mx-auto">
-					<div className="col-lg-6 col-md-5 col-sm-8">
+					<div className="col-lg-5 col-md-5 col-sm-8">
 						<div className="input-group">
 							<span className="input-group-text" id="basic-addon1">
 								Name
@@ -61,7 +61,7 @@ const Contact = React.forwardRef((props, ref) => {
 							name="message"
 							className="form-control "
 							id="message"
-							rows="3"
+							rows="4"
 							aria-label="With textarea"
 							placeholder="Write message here..."
 						></textarea>

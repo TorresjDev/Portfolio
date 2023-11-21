@@ -13,11 +13,11 @@ function SiteNav({ scrollContact }) {
 					className="collapse navbar-collapse mx-1 text-uppercase fw-bolder d-flex justify-content-end"
 					id="navbarSupportedContent"
 				>
-					<ul className="navbar-nav mb-2 mb-lg-0 navbar-title">
-						<li className="nav-item mx-1">Full-Stack</li>
-						<li className="nav-item mx-1 pe-2">Software Developer</li>
-					</ul>
-					<div className="user-navbar ">
+					<div className="navbar-nav mb-2 mb-lg-0">
+						<div className="nav-item mx-1">Full-Stack </div>
+						<div className="nav-item me-1 mx-1">Software Developer</div>
+					</div>
+					<div className="user-navbar mx-1 ">
 						<div className="dropdown">
 							<button className="dropbox">
 								<div className="material-symbols-outlined" title="" style={{ padding: "3px 3px 1px 2px" }}>

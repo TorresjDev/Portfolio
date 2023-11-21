@@ -1,4 +1,4 @@
-.pre-work {
+/* .pre-work {
 	max-height: 75% !important;
 	height: 75%;
 }
@@ -6,11 +6,11 @@
 .pre-work .carousel-item {
 	max-height: 75% !important;
 	height: 75%;
-}
+} */
 
 .pre-work .carousel-item > img {
 	max-height: 100% !important;
-	height: 23rem !important;
+	height: 75vh !important;
 	object-fit: fill;
 	width: 65%;
 }
