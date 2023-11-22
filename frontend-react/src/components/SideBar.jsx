@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
+function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme }) {
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar">
@@ -11,7 +11,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 			<div className="middle-sidebar">
 				<ul className="sidebar-list">
 					<li className="sidebar-list-item">
-						<div className="channel-logo" onClick={toggleSidebar}>
+						<div className="channel-logo sidebar-link" onClick={toggleSidebar}>
 							<div className="channel-symbol" title="Expand Sidebar">
 								<div className="material-symbols-outlined" title="Expand Sidebar">
 									format_letter_spacing
@@ -53,7 +53,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 						</Link>
 					</li> */}
 					<li className="sidebar-list-item">
-						<div className="sidebar-link contact" onClick={scrollOnClick}>
+						<div className="sidebar-link" onClick={scrollOnClick}>
 							<div className="material-symbols-outlined" title="">
 								perm_contact_calendar
 							</div>
@@ -62,9 +62,33 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick }) {
 					</li>
 				</ul>
 			</div>
-			{/* <div className="bottom-sidebar">
-				<ul className="sidebar-list"></ul>
-			</div> */}
+			<div className="bottom-sidebar">
+				<ul className="sidebar-list">
+					<li className="sidebar-list-item">
+						<div className="sidebar-link light">
+							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-light")}>
+								radio_button_checked
+							</div>
+						</div>
+					</li>
+
+					<li className="sidebar-list-item">
+						<div className="sidebar-link dawn">
+							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-dawn")}>
+								radio_button_checked
+							</div>
+						</div>
+					</li>
+
+					<li className="sidebar-list-item">
+						<div className="sidebar-link dark">
+							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-dark")}>
+								radio_button_checked
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</aside>
 	);
 }
