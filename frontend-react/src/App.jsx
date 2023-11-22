@@ -12,6 +12,7 @@ import "./app.css";
 
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const [theme, setTheme] = useState("theme-blue");
 
 	const contactRef = useRef(null);
 
@@ -29,7 +30,7 @@ function App() {
 	};
 
 	return (
-		<div className="container-fluid app bg-light">
+		<div className={`container-fluid app bg-light ${theme}`}>
 			<SiteNav scrollContact={scrollOnClick} />
 			<div className=" app-body">
 				<SideBar
@@ -37,6 +38,7 @@ function App() {
 					toggleSidebar={toggleSidebar}
 					closeSidebar={closeSidebar}
 					scrollOnClick={scrollOnClick}
+					setTheme={setTheme} // Passing setTheme
 				/>
 				<main className="pages m-0">
 					<WelcomeVideo isOpen={isSidebarOpen} scrollContact={scrollOnClick} />

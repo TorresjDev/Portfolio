@@ -25,6 +25,14 @@
 		margin: 0 3px 0 3px;
 		/* font-weight: normal ; */
 	}
+
+	.contact .form-control,
+	.contact .input-group-text,
+	.contact textarea,
+	.contact button {
+		margin-top: 0.15rem;
+		margin-bottom: 0.15rem !important;
+	}
 }
 
 @media (max-width: 910px) {
@@ -105,7 +113,7 @@
 	}
 }
 
-@media (min-height: 580px) {
+@media (man-height: 580px) {
 	.pre-work .carousel-item > img {
 		max-height: 55%;
 		height: 21rem;
@@ -134,6 +142,18 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.theme-light {
+	background-color: #ffffff;
+}
+
+.theme-dawn {
+	background-color: #820000;
+}
+
+.theme-dark {
+	background-color: #000000;
 }
 
 main {
@@ -298,10 +318,10 @@ nav {
 }
 
 .sidebar .channel-logo {
-	display: block;
-	width: 30px;
+	/* display: block;
+	width: 30px; */
 	height: 30px;
-	margin-left: 45%;
+	/* margin-left: 10%; */
 	transition: var(--animation-duration) var(--animation-timing-curve);
 }
 
@@ -309,18 +329,17 @@ nav {
 	overflow-y: auto;
 	overflow-x: hidden;
 	flex-grow: 1;
-	margin: 1rem 0;
 }
 
 .middle-sidebar,
 .bottom-sidebar {
 	width: 100%;
-	padding: 0.5rem 4.5rem 0.5rem 0;
+	padding: 0.5rem 0;
 }
 
 .sidebar.open .middle-sidebar {
 	width: 100%;
-	padding: 0.5rem 8rem 0.5rem 0;
+	padding: 0.5rem 0;
 }
 
 .sidebar.open .channel-symbol {
@@ -330,9 +349,10 @@ nav {
 }
 
 .sidebar-list {
-	margin: 0;
+	/* margin: 0; */
+	/* margin-right: 20px; */
 	padding: 0;
-	display: inline-flex;
+	/* display: inline-flex; */
 	flex-direction: column;
 	align-items: center;
 	list-style: none;
@@ -431,7 +451,7 @@ nav {
 }
 
 .sidebar.open .channel-logo {
-	width: 90px;
+	width: 3.3vw;
 	height: 90px;
 	margin-top: 1rem;
 	text-align: center;
@@ -514,6 +534,8 @@ nav {
 .contact textarea,
 .contact button {
 	border-radius: 0.25rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
 }
 
 /* Form Layout */
@@ -531,6 +553,12 @@ nav {
 
 .contact .input-group {
 	margin-bottom: 1rem;
+}
+
+.contact textarea {
+	width: 100%; /* Full width */
+	height: 20vh; /* Responsive height based on viewport height */
+	resize: none; /* Optional: disables resizing */
 }
 
 /* Responsive Layout */

@@ -34,10 +34,10 @@ const Contact = React.forwardRef((props, ref) => {
 
 	return (
 		<div className="container-fluid mb-3 contact">
-			<h2>Contact Me 👇</h2>
 			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
+				<h2>Contact Me 👇</h2>
 				<div className="row pt-2 mx-auto">
-					<div className="col-lg-5 col-md-5 col-sm-8">
+					<div className="col-lg-4 col-md-5 col-sm-8">
 						<div className="input-group">
 							<span className="input-group-text" id="basic-addon1">
 								Name
@@ -45,7 +45,7 @@ const Contact = React.forwardRef((props, ref) => {
 							<input type="text" className="form-control" id="name" name="name" placeholder="Enter your name..." />
 						</div>
 					</div>
-					<div className="col-lg-6 col-md-6 col-sm-9">
+					<div className="col-lg-5 col-md-6 col-sm-9">
 						<div className="input-group">
 							<span className="input-group-text" id="basic-addon1">
 								Email
@@ -54,22 +54,27 @@ const Contact = React.forwardRef((props, ref) => {
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-10 col-md-9 col-sm-10 mx-auto">
-					<div className="input-group">
-						<span className="input-group-text">Message</span>
-						<textarea
-							name="message"
-							className="form-control "
-							id="message"
-							rows="4"
-							aria-label="With textarea"
-							placeholder="Write message here..."
-						></textarea>
+				<div className="col-lg-9 col-md-8 col-sm-10 mx-auto">
+					<h3 className="pb-1">Write me a message</h3>
+					{/* <div className="input-group"> */}
+					{/* <span className="input-group-text">Message</span> */}
+					<textarea
+						name="message"
+						className="form-control "
+						id="message"
+						// rows="3"
+						aria-label="With textarea"
+						placeholder="Write message here..."
+					></textarea>
+					{/* </div> */}
+				</div>
+				<div className="row">
+					<div className="col-md-3 col-sm-3 col-xs-3">
+						<button variant="outline-primary" className="contact-submit btn btn-success" value="Send" type="submit">
+							Send
+						</button>
 					</div>
 				</div>
-				<button variant="outline-primary" className="contact-submit my-3 btn btn-success" value="Send" type="submit">
-					Send
-				</button>
 			</form>
 		</div>
 	);
