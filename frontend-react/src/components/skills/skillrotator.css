@@ -17,18 +17,18 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 60px;
-	/* border-radius: 6px 3px 6px 3px; */
+	height: 3.6vh;
 	border: 4px groove #000000;
-	padding: 10px 0 52px 0;
+	padding: 3vh 0 52px 0;
 	z-index: 10;
 }
 
 .rotate {
 	display: flex;
-	animation: marquee 24s linear infinite;
+	animation: marquee 36s linear infinite;
 	position: absolute;
 	white-space: nowrap;
+	top: 0;
 }
 
 .rotate:hover {
@@ -37,13 +37,15 @@
 
 .skill {
 	width: 82px;
+	max-width: 80px;
 	height: 4.5vh;
-	margin-right: 20px;
+	margin: 1.3rem 0.9rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 	position: relative;
+	justify-content: space-between;
 }
 
 .skill:hover {

@@ -58,7 +58,7 @@ function SkillRotator() {
 		// { name: "Python", link: "", img: "A versatile programming language used in various domains." }
 	];
 
-	const doubledSkills = [...skills, ...skills]; // Duplicate the skills array
+	const doubledSkills = [...skills, ...skills, ...skills]; // Duplicate the skills array
 
 	const skillElements = doubledSkills.map((skill, index) => {
 		return (
@@ -71,7 +71,7 @@ function SkillRotator() {
 
 	return (
 		<div className="skill-rotator-container bg-light">
-			<div className="rotate py-2">{skillElements}</div>
+			<div className="rotate py-auto my-auto">{skillElements}</div>
 		</div>
 	);
 }
