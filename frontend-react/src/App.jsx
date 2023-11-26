@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import SiteNav from "./components/SiteNav";
 import Footer from "./components/Footer";
@@ -12,7 +12,17 @@ import "./app.css";
 
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-	const [theme, setTheme] = useState("theme-blue");
+	const [theme, setTheme] = useState("theme-light");
+
+	useEffect(() => {
+		document.body.className = theme;
+		document.documentElement.className = theme;
+	}, [theme]);
+
+	const handleThemeChange = (newTheme) => {
+		document.documentElement.style.backgroundColor = newTheme;
+		document.body.style.backgroundColor = newTheme;
+	};
 
 	const contactRef = useRef(null);
 
@@ -30,7 +40,7 @@ function App() {
 	};
 
 	return (
-		<div className={`container-fluid app bg-light ${theme}`}>
+		<div className={`container-fluid app ${theme.color}`}>
 			<SiteNav scrollContact={scrollOnClick} />
 			<div className=" app-body">
 				<SideBar
@@ -38,7 +48,7 @@ function App() {
 					toggleSidebar={toggleSidebar}
 					closeSidebar={closeSidebar}
 					scrollOnClick={scrollOnClick}
-					setTheme={setTheme} // Passing setTheme
+					setTheme={setTheme}
 				/>
 				<main className="pages m-0">
 					<WelcomeVideo isOpen={isSidebarOpen} scrollContact={scrollOnClick} />

@@ -27,14 +27,20 @@ const Contact = React.forwardRef((props, ref) => {
 				e.target.reset();
 			},
 			(error) => {
-				console.log(error.text);
+				Swal.fire({
+					icon: "error",
+					title: "Oops...",
+					text: "Something went wrong!"
+					// footer: '<a href="#">Why do I have this issue?</a>'
+				});
+				console.log(error);
 			}
 		);
 	};
 
 	return (
 		<div className="container-fluid mb-3 contact">
-			<form className="bg-dark p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
+			<form className="p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
 				<h2>Contact Me 👇</h2>
 				<div className="row pt-2 mx-auto">
 					<div className="col-lg-4 col-md-5 col-sm-8">

@@ -57,26 +57,29 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 			<div className="bottom-sidebar">
 				<ul className="sidebar-list">
 					<li className="sidebar-list-item">
-						<div className="sidebar-link light">
-							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-light")}>
+						<div className="sidebar-link light" onClick={() => setTheme("theme-light")}>
+							<div className="material-symbols-outlined" title="">
 								radio_button_checked
 							</div>
+							<div className="hidden-sidebar">Light</div>
 						</div>
 					</li>
 
 					<li className="sidebar-list-item">
-						<div className="sidebar-link dawn">
-							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-dawn")}>
+						<div className="sidebar-link grey" onClick={() => setTheme("theme-grey")}>
+							<div className="material-symbols-outlined" title="">
 								radio_button_checked
 							</div>
+							<div className="hidden-sidebar">Grey</div>
 						</div>
 					</li>
 
 					<li className="sidebar-list-item">
-						<div className="sidebar-link dark">
-							<div className="material-symbols-outlined" title="" onClick={() => setTheme("theme-dark")}>
+						<div className="sidebar-link dark" onClick={() => setTheme("theme-dark")}>
+							<div className="material-symbols-outlined" title="">
 								radio_button_checked
 							</div>
+							<div className="hidden-sidebar">Dark</div>
 						</div>
 					</li>
 				</ul>
