@@ -44,14 +44,6 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 							<div className="hidden-sidebar">Projects</div>
 						</Link>
 					</li>
-					{/* <li className="sidebar-list-item">
-						<Link to="" className="sidebar-link">
-							<div className="material-symbols-outlined" title="">
-								group
-							</div>
-							<div className="hidden-sidebar">Friends</div>
-						</Link>
-					</li> */}
 					<li className="sidebar-list-item">
 						<div className="sidebar-link" onClick={scrollOnClick}>
 							<div className="material-symbols-outlined" title="">

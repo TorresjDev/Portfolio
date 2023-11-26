@@ -26,6 +26,10 @@
 		/* font-weight: normal ; */
 	}
 
+	.bottom-sidebar .sidebar-list {
+		margin-bottom: 1vh;
+	}
+
 	.contact .form-control,
 	.contact .input-group-text,
 	.contact textarea,
@@ -62,6 +66,9 @@
 @media (max-width: 805px) {
 	.wel-row .contact-me {
 		padding: 1.7vh 1vw 1vh 1vw;
+	}
+	.skill {
+		margin: 1.3rem 0.3vw;
 	}
 }
 
@@ -278,7 +285,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	height: calc(100vh - var(--header-height));
-	/* height: 100vh; */
 	padding-top: 1rem;
 	align-items: center;
 	justify-content: stretch;
@@ -318,10 +324,7 @@ nav {
 }
 
 .sidebar .channel-logo {
-	/* display: block;
-	width: 30px; */
 	height: 30px;
-	/* margin-left: 10%; */
 	transition: var(--animation-duration) var(--animation-timing-curve);
 }
 
@@ -337,6 +340,15 @@ nav {
 	padding: 0.5rem 0;
 }
 
+.bottom-sidebar .sidebar-list {
+	margin-bottom: 3.3vh;
+}
+
+.bottom-sidebar {
+	display: flex;
+	flex: auto;
+}
+
 .sidebar.open .middle-sidebar {
 	width: 100%;
 	padding: 0.5rem 0;
@@ -349,10 +361,7 @@ nav {
 }
 
 .sidebar-list {
-	/* margin: 0; */
-	/* margin-right: 20px; */
 	padding: 0;
-	/* display: inline-flex; */
 	flex-direction: column;
 	align-items: center;
 	list-style: none;
@@ -588,14 +597,21 @@ nav {
 /* ! */
 
 /*TODO Footer */
-footer p {
-	text-align: right;
-	font-family: "Silkscreen";
-	color: #ff9000;
-}
-
 footer {
 	font-family: "Silkscreen";
 	color: #ff9000;
 	background-color: #000000 !important;
+}
+
+footer .f-div {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+footer p {
+	text-align: right;
+	font-family: "Silkscreen";
+	color: #ff9000;
+	flex: auto;
+	margin-right: 1rem;
 }
