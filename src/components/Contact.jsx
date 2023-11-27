@@ -7,7 +7,7 @@ const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const emailJSKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const Contact = React.forwardRef((props, ref) => {
-	console.log({ serviceId, templateId, emailJSKey });
+	// console.log({ serviceId, templateId, emailJSKey });
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs.sendForm(serviceId, templateId, ref.current, emailJSKey).then(
