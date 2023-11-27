@@ -17,7 +17,7 @@ function WelcomeVideo({ isOpen, scrollContact }) {
 				<div className="container-fluid">
 					<div className="row wel-row">
 						<div className="my-2 col-md-2 col-sm-1">
-							<a href="/pdf/Software-Engineer-Jesus-Torres.pdf" download className="btn btn-secondary resume">
+							<a href="/Software-Engineer-Jesus-Torres.pdf" download className="btn btn-secondary resume">
 								{/* <p> Resume</p> */}
 								Resume
 							</a>

@@ -29,7 +29,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					</li>
 
 					<li className="sidebar-list-item">
-						<a href="/pdf/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
+						<a href="/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
 							<div className="material-symbols-outlined" title="">
 								post_add
 							</div>

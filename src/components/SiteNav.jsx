@@ -28,7 +28,7 @@ function SiteNav({ scrollContact }) {
 								<div className="dd-link btn" onClick={scrollContact}>
 									Contact Me
 								</div>
-								<a className="dd-link btn" href="/pdf/Software-Engineer-Jesus-Torres.pdf" download>
+								<a className="dd-link btn" href="/Software-Engineer-Jesus-Torres.pdf" download>
 									Resume
 								</a>
 							</div>
