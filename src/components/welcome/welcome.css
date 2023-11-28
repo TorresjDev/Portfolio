@@ -25,6 +25,7 @@ video {
 	padding-top: 1rem;
 	transition: width 0.5s ease-in-out;
 	transition: left ease-in-out;
+	z-index: 1;
 }
 
 .open .content {

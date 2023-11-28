@@ -6,9 +6,6 @@ function SiteNav({ scrollContact }) {
 		<nav className="navbar navbar-expand-lg fixed-top d-flex justify-content-between">
 			<img src={devLogo} className="dev-logo rounded" alt="logo" />
 			<div>
-				{/* <ul className="navbar-nav mb-2 mb-lg-0 ms-1">
-					<li className="nav-item mx-1"></li>
-				</ul> */}
 				<div
 					className="collapse navbar-collapse mx-1 text-uppercase fw-bolder d-flex justify-content-end"
 					id="navbarSupportedContent"
@@ -28,7 +25,7 @@ function SiteNav({ scrollContact }) {
 								<div className="dd-link btn" onClick={scrollContact}>
 									Contact Me
 								</div>
-								<a className="dd-link btn" href="/Software-Engineer-Jesus-Torres.pdf" download>
+								<a className="dd-link btn" href="%PUBLIC_URL%/Software-Engineer-Jesus-Torres.pdf" download>
 									Resume
 								</a>
 							</div>
