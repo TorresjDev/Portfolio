@@ -128,6 +128,13 @@ body {
 	color: #ffffff;
 }
 
+.theme-dark .connect-links a {
+	padding: 0.2em;
+	background-color: snow;
+	border-radius: 39px;
+	transition: 0.5s ease-in-out;
+}
+
 .theme-dark .contact form {
 	background-color: #131313;
 }
@@ -296,14 +303,18 @@ main {
 .app-body {
 	margin-top: 5%;
 	height: 100%;
-	/* background-color: #820000; */
 	display: flex;
 }
 
 .pages {
 	height: 100%;
 	width: 100%;
-	/* color: snow; */
+	flex-grow: 1;
+	margin: 0;
+}
+
+.pages.open {
+	width: 88%;
 }
 /* ! */
 
@@ -331,8 +342,9 @@ nav {
 }
 
 .navbar-nav {
+	text-shadow: 3px 3px black;
 	color: #ff9000;
-	font-size: 0.7vw;
+	font-size: 1.5vw;
 }
 
 .dropdown .dropbtn {
@@ -405,7 +417,7 @@ nav {
 .sidebar {
 	/* background-color: #3c3c3c; */
 	z-index: 1;
-	width: 69px;
+	width: 5.3vw;
 	border-style: none solid none none;
 	display: flex;
 	flex-direction: column;
@@ -530,14 +542,14 @@ nav {
 }
 
 .sidebar-link {
-	display: flex;
-	width: 100%;
+	display: inline-flex;
+	/* width: 100%; */
 	font-weight: bold;
 	padding: 0.5rem 0;
 	/* color: var(--light-gray); */
 	text-decoration: none;
-	align-items: center;
-	padding-left: 25px;
+	/* align-items: center; */
+	/* padding-left: 25px; */
 }
 
 .sidebar-link div {
@@ -550,6 +562,10 @@ nav {
 	fill: var(--light-gray);
 	padding: 1em 0 1em 0;
 	text-align: -webkit-center;
+}
+
+.open .sidebar-list-item {
+	padding: 1vh 0 1vh 2vw;
 }
 
 .sidebar-list-item.active {
@@ -568,10 +584,9 @@ nav {
 }
 
 .channel-name {
-	color: #ffffff;
+	align-self: start;
 	font-size: 0.75rem;
 	font-weight: bold;
-	margin-left: 2em;
 }
 
 .sidebar .top-sidebar {
@@ -582,10 +597,12 @@ nav {
 .sidebar.open {
 	width: 12%;
 	padding: 0;
+	transition: width var(--animation-duration) var(--animation-timing-curve);
 }
 
 .sidebar.open .top-sidebar {
 	height: 125px;
+	/* width: 100vw; */
 }
 
 .sidebar .top-sidebar .hidden-sidebar {
@@ -650,6 +667,7 @@ nav {
 	justify-content: center;
 	width: 100%;
 	flex-wrap: wrap;
+	transition: 0.5s ease-in-out;
 }
 
 .connect-details {

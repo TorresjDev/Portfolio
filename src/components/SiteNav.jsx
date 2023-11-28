@@ -13,9 +13,9 @@ function SiteNav({ scrollContact }) {
 					className="collapse navbar-collapse mx-1 text-uppercase fw-bolder d-flex justify-content-end"
 					id="navbarSupportedContent"
 				>
-					<div className="navbar-nav mb-2 mb-lg-0">
+					<div className="navbar-nav">
 						<div className="nav-item mx-1">Full-Stack </div>
-						<div className="nav-item me-1 mx-1">Software Developer</div>
+						<div className="nav-item mx-2">Software Developer</div>
 					</div>
 					<div className="user-navbar mx-1 ">
 						<div className="dropdown">

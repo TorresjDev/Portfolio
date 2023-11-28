@@ -5,7 +5,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar">
-				<div className="hidden-sidebar your-channel">{}</div>
+				{/* <div className="hidden-sidebar your-channel">{}</div> */}
 				<div className="hidden-sidebar channel-name">Jesus Torres</div>
 			</div>
 			<div className="middle-sidebar">
