@@ -26,10 +26,9 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 							<div className="hidden-sidebar">About Me</div>
 						</Link>
 					</li>
-
 					<li className="sidebar-list-item">
-						<a href="/Portfolio/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
-							<div className="material-symbols-outlined icon" title="">
+						<a href={`${process.env.PUBLIC_URL}/Software-Engineer-Jesus-Torres.pdf`} className="sidebar-link" download>
+							<div className="material-symbols-outlined" title="">
 								post_add
 							</div>
 							<div className="hidden-sidebar">Resume</div>
@@ -63,7 +62,6 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 							<div className="hidden-sidebar">Light</div>
 						</div>
 					</li>
-
 					<li className="sidebar-list-item">
 						<div className="sidebar-link grey" onClick={() => setTheme("theme-grey")}>
 							<div className="material-symbols-outlined icon" title="">
@@ -72,7 +70,6 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 							<div className="hidden-sidebar">Grey</div>
 						</div>
 					</li>
-
 					<li className="sidebar-list-item">
 						<div className="sidebar-link dark" onClick={() => setTheme("theme-dark")}>
 							<div className="material-symbols-outlined icon" title="">
