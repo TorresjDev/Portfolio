@@ -27,7 +27,7 @@ video {
 	transition: left ease-in-out;
 }
 
-.content.open {
+.open .content {
 	left: 10%;
 	width: 90%;
 	transition: width ease-in-out; /* Smooth transition for the width property */

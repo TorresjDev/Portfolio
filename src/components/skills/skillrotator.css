@@ -20,7 +20,7 @@
 	height: 3.6vh;
 	border-style: solid none solid none;
 	padding: 3vh 0 52px 0;
-	z-index: 10;
+	z-index: 0;
 }
 
 .rotate {

@@ -50,8 +50,8 @@ function App() {
 					scrollOnClick={scrollOnClick}
 					setTheme={setTheme}
 				/>
-				<main className="pages m-0">
-					<WelcomeVideo isOpen={isSidebarOpen} scrollContact={scrollOnClick} />
+				<main className={isSidebarOpen ? "pages open" : "pages"}>
+					<WelcomeVideo scrollContact={scrollOnClick} />
 					<SkillRotator />
 					<PerviousWork />
 					<section className="my-3">
