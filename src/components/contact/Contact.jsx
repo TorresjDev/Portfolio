@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import "./contact.css";
 
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;

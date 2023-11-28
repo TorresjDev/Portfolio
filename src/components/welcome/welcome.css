@@ -1,4 +1,8 @@
-video {
+.welcome-vid {
+	height: 88vh;
+}
+
+.welcome-vid video {
 	width: 100%;
 	height: 99.99%;
 	object-fit: fill;
@@ -6,10 +10,6 @@ video {
 	border: 6px groove #170000;
 	float: left;
 	transition: object-fit 0.5s ease-in-out;
-}
-
-.welcome-vid {
-	height: 88vh;
 }
 
 .content {
@@ -31,8 +31,8 @@ video {
 .open .content {
 	left: 10%;
 	width: 90%;
-	transition: width ease-in-out; /* Smooth transition for the width property */
-	transition: left ease-in-out; /* Smooth transition for the width property */
+	transition: width ease-in-out;
+	transition: left ease-in-out;
 }
 
 .content h2 {

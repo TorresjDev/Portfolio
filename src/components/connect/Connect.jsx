@@ -1,6 +1,5 @@
 import React from "react";
-
-// import wtImg from "https://wakatime.com/static/img/wakatime.svg";
+import "./connect.css";
 
 function Connect() {
 	return (
@@ -23,12 +22,6 @@ function Connect() {
 				</a>
 				{/* <a id="profile-link" href="https://codepen.io/TorresjDev" target="_blank" className="connect-details">
 					<img src={wtImg} alt="" srcSet="" />
-				</a> */}
-				{/* <a href="mailto:j.torres3.dev@gmail.com" className="connect-details">
-					<i className="fa fa-paper-plane"></i> j.torres3.dev@gmail.com
-				</a>
-				<a href="tel:760-515-9294" className="connect-details">
-					<i className="fas fa-mobile-alt"></i> Call me
 				</a> */}
 			</div>
 		</div>
