@@ -24,7 +24,7 @@ function PerviousWork() {
 		// console.log("hello", { data, index, date: Date.now() });
 		return (
 			<div
-				className={`carousel-item ${index === 0 ? "active" : ""}`}
+				className={`carousel-item mt-1 ${index === 0 ? "active" : ""}`}
 				data-bs-interval="3000"
 				key={`${index}) ${data.title} - ${Date.now()}`}
 			>
@@ -38,7 +38,7 @@ function PerviousWork() {
 	};
 
 	return (
-		<div className="pre-work p-1 m-1">
+		<div className="pre-work">
 			<div id="carousel-preWork" className="carousel slide carousel-fade" data-bs-ride="carousel">
 				<div className="carousel-indicators">
 					<button

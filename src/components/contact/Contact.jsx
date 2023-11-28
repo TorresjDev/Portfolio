@@ -76,8 +76,8 @@ const Contact = React.forwardRef((props, ref) => {
 					{/* </div> */}
 				</div>
 				<div className="row">
-					<div className="col-md-3 col-sm-3 col-xs-3">
-						<button variant="outline-primary" className="contact-submit btn btn-success" value="Send" type="submit">
+					<div className="col-md-2 col-sm-2 col-xs-1">
+						<button className="contact-submit btn btn-outline-info" value="Send" type="submit">
 							Send
 						</button>
 					</div>

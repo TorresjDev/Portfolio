@@ -1,12 +1,6 @@
-/* .pre-work {
-	max-height: 75% !important;
-	height: 75%;
+.pre-work {
+	margin: 4.2vh auto;
 }
-
-.pre-work .carousel-item {
-	max-height: 75% !important;
-	height: 75%;
-} */
 
 .pre-work .carousel-item > img {
 	max-height: 100% !important;
