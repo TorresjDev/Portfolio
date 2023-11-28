@@ -1,0 +1,51 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact .form-control,
+.contact .input-group-text,
+.contact textarea,
+.contact button {
+	border-radius: 0.25rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+/* Form Layout */
+.contact form {
+	width: 90vw;
+	max-width: 100%;
+	margin: auto;
+	padding: 1rem;
+}
+
+.contact .row {
+	justify-content: space-evenly;
+	margin-bottom: 0.3em;
+}
+
+.contact .input-group {
+	margin-bottom: 1rem;
+}
+
+.contact textarea {
+	width: 100%;
+	height: 20vh;
+	resize: none;
+}
+
+/* Button Styles */
+.contact button.contact-submit {
+	width: 100%;
+	padding: 0.75rem;
+	font-size: 1rem;
+}
+
+/* Typography */
+.contact h2 {
+	margin-bottom: 1rem;
+	text-align: center;
+}

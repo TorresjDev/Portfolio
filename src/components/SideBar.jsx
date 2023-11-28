@@ -5,7 +5,6 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar">
-				{/* <div className="hidden-sidebar your-channel">{}</div> */}
 				<div className="hidden-sidebar channel-name">Jesus Torres</div>
 			</div>
 			<div className="middle-sidebar">
@@ -13,7 +12,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					<li className="sidebar-list-item">
 						<div className="channel-logo sidebar-link" onClick={toggleSidebar}>
 							<div className="channel-symbol" title="Expand Sidebar">
-								<div className="material-symbols-outlined" title="Expand Sidebar">
+								<div className="material-symbols-outlined icon" title="Expand Sidebar">
 									format_letter_spacing
 								</div>
 							</div>
@@ -21,7 +20,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					</li>
 					<li className="sidebar-list-item">
 						<Link to="" className="sidebar-link">
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								dashboard
 							</div>
 							<div className="hidden-sidebar">About Me</div>
@@ -30,7 +29,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 
 					<li className="sidebar-list-item">
 						<a href="/Portfolio/Software-Engineer-Jesus-Torres.pdf" className="sidebar-link" download>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								post_add
 							</div>
 							<div className="hidden-sidebar">Resume</div>
@@ -38,7 +37,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					</li>
 					<li className="sidebar-list-item">
 						<Link to="" className="sidebar-link">
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								add_task
 							</div>
 							<div className="hidden-sidebar">Projects</div>
@@ -46,7 +45,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					</li>
 					<li className="sidebar-list-item">
 						<div className="sidebar-link" onClick={scrollOnClick}>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								perm_contact_calendar
 							</div>
 							<div className="hidden-sidebar">Reach Out</div>
@@ -58,7 +57,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 				<ul className="sidebar-list">
 					<li className="sidebar-list-item">
 						<div className="sidebar-link light" onClick={() => setTheme("theme-light")}>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								radio_button_checked
 							</div>
 							<div className="hidden-sidebar">Light</div>
@@ -67,7 +66,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 
 					<li className="sidebar-list-item">
 						<div className="sidebar-link grey" onClick={() => setTheme("theme-grey")}>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								radio_button_checked
 							</div>
 							<div className="hidden-sidebar">Grey</div>
@@ -76,7 +75,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 
 					<li className="sidebar-list-item">
 						<div className="sidebar-link dark" onClick={() => setTheme("theme-dark")}>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								radio_button_checked
 							</div>
 							<div className="hidden-sidebar">Dark</div>
