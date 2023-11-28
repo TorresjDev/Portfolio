@@ -19,10 +19,10 @@ function App() {
 		document.documentElement.className = theme;
 	}, [theme]);
 
-	const handleThemeChange = (newTheme) => {
-		document.documentElement.style.backgroundColor = newTheme;
-		document.body.style.backgroundColor = newTheme;
-	};
+	// const handleThemeChange = (newTheme) => {
+	// 	document.documentElement.style.backgroundColor = newTheme;
+	// 	document.body.style.backgroundColor = newTheme;
+	// };
 
 	const contactRef = useRef(null);
 
@@ -57,7 +57,7 @@ function App() {
 					<section className="my-3">
 						<Connect />
 					</section>
-					<section className="mt-1">
+					<section className="my-3">
 						<Contact ref={contactRef} id="contact" />
 					</section>
 				</main>

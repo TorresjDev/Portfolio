@@ -64,33 +64,33 @@ body {
 	background-color: #cacaca;
 }
 
-/**?Grey */
-.theme-grey {
+/**?shade */
+.theme-shade {
 	background-color: #858585;
 	color: #000000;
 }
 
-.theme-grey nav {
+.theme-shade nav {
 	background-color: #858585;
 }
 
-.theme-grey .sidebar {
+.theme-shade .sidebar {
 	background-color: #858585;
 }
 
-.theme-grey .sidebar-list-item:hover {
+.theme-shade .sidebar-list-item:hover {
 	background-color: #ff9000;
 }
 
-.theme-grey .sidebar-link {
+.theme-shade .sidebar-link {
 	color: #ffffff;
 }
 
-.theme-grey .contact form {
+.theme-shade .contact form {
 	background-color: #868686;
 }
 
-.theme-grey footer {
+.theme-shade footer {
 	background-color: #858585;
 }
 
@@ -365,7 +365,7 @@ nav {
 
 .dropdown .dropbtn {
 	background-color: #c0c0c0;
-	border: 2px groove grey;
+	border: 2px groove shade;
 	border-radius: 5px;
 	color: #820000;
 }
@@ -384,7 +384,7 @@ nav {
 .dropdown {
 	float: right;
 	overflow: hidden;
-	border: 3px groove grey;
+	border: 3px groove shade;
 	border-radius: 6px;
 }
 
@@ -535,8 +535,8 @@ nav {
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.bottom-sidebar .grey:hover,
-.bottom-sidebar .grey .hidden-sidebar:hover {
+.bottom-sidebar .shade:hover,
+.bottom-sidebar .shade .hidden-sidebar:hover {
 	color: #676363;
 	transition: color 0.6s ease-in-out;
 	text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 1px 1px 0 #646464;

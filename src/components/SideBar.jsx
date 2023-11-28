@@ -63,11 +63,11 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 						</div>
 					</li>
 					<li className="sidebar-list-item">
-						<div className="sidebar-link grey" onClick={() => setTheme("theme-grey")}>
+						<div className="sidebar-link shade" onClick={() => setTheme("theme-shade")}>
 							<div className="material-symbols-outlined icon" title="">
 								radio_button_checked
 							</div>
-							<div className="hidden-sidebar">Grey</div>
+							<div className="hidden-sidebar">Shade</div>
 						</div>
 					</li>
 					<li className="sidebar-list-item">

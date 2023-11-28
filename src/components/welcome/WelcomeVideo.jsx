@@ -16,23 +16,23 @@ function WelcomeVideo({ scrollContact }) {
 							<a
 								href={`${process.env.PUBLIC_URL}/Software-Engineer-Jesus-Torres.pdf`}
 								download
-								className="btn btn-secondary resume"
+								className="btn btn-outline-secondary resume"
 							>
 								Resume
 							</a>
 						</div>
 						<div className="col-md-1 col-sm-1 ms-auto">
-							<a href="https://www.linkedin.com/in/torresdev/" target="_blank" className="btn">
+							<a href="https://www.linkedin.com/in/torresdev/" target="_blank" className="btn" rel="noreferrer">
 								<i className="fab fa-linkedin"></i>
 							</a>
 						</div>
 						<div className="col-md-1 col-sm-1 mx-auto">
-							<a id="profile-link" href="https://github.com/TorresjDev" target="_blank" className="btn">
+							<a id="profile-link" href="https://github.com/TorresjDev" target="_blank" className="btn" rel="noreferrer">
 								<i className="fab fa-github"></i>
 							</a>
 						</div>
 						<div className="my-2 col-lg-3 col-md-3 col-sm-4" onClick={scrollContact}>
-							<div className="btn btn-secondary contact-me">Contact Me</div>
+							<div className="btn btn-outline-secondary contact-me">Contact Me</div>
 						</div>
 					</div>
 				</div>

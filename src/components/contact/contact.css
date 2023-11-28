@@ -3,6 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 3vh auto;
 }
 
 .contact .form-control,
