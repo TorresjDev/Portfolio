@@ -42,7 +42,7 @@ function App() {
 	return (
 		<div className={`container-fluid app ${theme.color}`}>
 			<SiteNav scrollContact={scrollOnClick} />
-			<div className=" app-body">
+			<div className="app-body">
 				<SideBar
 					isOpen={isSidebarOpen}
 					toggleSidebar={toggleSidebar}
@@ -64,9 +64,7 @@ function App() {
 			</div>
 			<Footer id="footer" />
 			<Routes>
-				{/* <Switch> */}
 				<Route path="/contact" component={<Contact />} />
-				{/* </Switch> */}
 			</Routes>
 		</div>
 	);

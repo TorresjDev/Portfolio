@@ -163,6 +163,13 @@ body {
 	}
 }
 
+@media (max-width: 2440px) {
+	.rotate {
+		animation: marquee 50s linear infinite;
+		transition: animation linear;
+	}
+}
+
 @media (max-width: 1075px) {
 	.navbar-nav .nav-item {
 		font-size: 0.5vw;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./skillrotator.css";
+import "./skill.css";
 import Tooltip from "../tooltip/Tooltip";
 
 function SkillRotator() {
@@ -55,10 +55,9 @@ function SkillRotator() {
 			link: "https://nodejs.org/",
 			img: "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
 		}
-		// { name: "Python", link: "", img: "A versatile programming language used in various domains." }
 	];
 
-	const doubledSkills = [...skills, ...skills, ...skills]; // Duplicate the skills array
+	const doubledSkills = [...skills, ...skills, ...skills];
 
 	const skillElements = doubledSkills.map((skill, index) => {
 		return (
