@@ -13,7 +13,11 @@ function WelcomeVideo({ scrollContact }) {
 				<div className="container-fluid">
 					<div className="row wel-row">
 						<div className="my-2 col-md-2 col-sm-1">
-							<a href="/Portfolio/Software-Engineer-Jesus-Torres.pdf" download className="btn btn-secondary resume">
+							<a
+								href={`${process.env.PUBLIC_URL}/Software-Engineer-Jesus-Torres.pdf`}
+								download
+								className="btn btn-secondary resume"
+							>
 								Resume
 							</a>
 						</div>
