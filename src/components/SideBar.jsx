@@ -28,7 +28,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 					</li>
 					<li className="sidebar-list-item">
 						<a href={`${process.env.PUBLIC_URL}/Software-Engineer-Jesus-Torres.pdf`} className="sidebar-link" download>
-							<div className="material-symbols-outlined" title="">
+							<div className="material-symbols-outlined icon" title="">
 								post_add
 							</div>
 							<div className="hidden-sidebar">Resume</div>
