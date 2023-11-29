@@ -7,8 +7,27 @@
 	--medium-gray: rgb(96, 96, 96);
 	--dark-gray: rgb(13, 13, 13);
 	--header-height: 40px;
-	--animation-duration: 200ms;
+	--animation-duration: 500ms;
 	--animation-timing-curve: ease-in-out;
+}
+
+::-webkit-scrollbar {
+	width: 1.2rem;
+	background: #3c3c3c;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #b3b3b3;
+	border-radius: 39px;
+	width: 0.9rem;
+	border: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #b3b3b3;
+	width: 1rem;
+	border: 2px solid #828282;
+	transition: 150ms ease-in-out;
 }
 
 code {
@@ -18,4 +37,15 @@ code {
 /*? google fonts */
 .material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "weight" 500, "GRAD" 0, "opsz" 20;
+}
+
+html,
+body {
+	margin: 0;
+	scroll-behavior: smooth !important;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 300ms ease, color 600ms ease;
 }
