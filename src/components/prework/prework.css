@@ -2,6 +2,10 @@
 	margin: 4.2vh auto;
 }
 
+.pre-work-header {
+	margin: 3vh auto;
+}
+
 .pre-work .carousel-item > img {
 	max-height: 100% !important;
 	height: 75vh !important;

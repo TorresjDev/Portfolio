@@ -39,6 +39,7 @@ function PerviousWork() {
 
 	return (
 		<div className="pre-work">
+			<h2 className="pre-work-header">Projects</h2>
 			<div id="carousel-preWork" className="carousel slide carousel-fade" data-bs-ride="carousel">
 				<div className="carousel-indicators">
 					<button
