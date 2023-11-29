@@ -13,7 +13,7 @@ const Contact = React.forwardRef((props, ref) => {
 		e.preventDefault();
 		emailjs.sendForm(serviceId, templateId, ref.current, emailJSKey).then(
 			(result) => {
-				console.log(result.text);
+				console.log({ result, props });
 				console.log("message sent");
 				Swal.fire({
 					title: "Message was sent successfully.",
@@ -63,17 +63,13 @@ const Contact = React.forwardRef((props, ref) => {
 				</div>
 				<div className="col-lg-9 col-md-8 col-sm-10 mx-auto">
 					<h3 className="pb-1">Write me a message</h3>
-					{/* <div className="input-group"> */}
-					{/* <span className="input-group-text">Message</span> */}
 					<textarea
 						name="message"
 						className="form-control "
 						id="message"
-						// rows="3"
 						aria-label="With textarea"
 						placeholder="Write message here..."
 					></textarea>
-					{/* </div> */}
 				</div>
 				<div className="row">
 					<div className="col-md-2 col-sm-2 col-xs-1">

@@ -19,11 +19,6 @@ function App() {
 		document.documentElement.className = theme;
 	}, [theme]);
 
-	// const handleThemeChange = (newTheme) => {
-	// 	document.documentElement.style.backgroundColor = newTheme;
-	// 	document.body.style.backgroundColor = newTheme;
-	// };
-
 	const contactRef = useRef(null);
 
 	const toggleSidebar = () => {

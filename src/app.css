@@ -38,97 +38,118 @@ body {
 .theme-light {
 	background-color: #f6f6f6;
 	color: black;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light nav {
 	background-color: #cacaca;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light .sidebar {
 	background-color: #cacaca;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light .sidebar-list-item:hover {
 	background-color: #ffffffde;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light .sidebar-link {
 	color: #000000;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light .contact form {
 	background-color: #f2f7f7;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-light footer {
 	background-color: #cacaca;
+	transition: 1.5s ease-in-out;
 }
 
 /**?shade */
 .theme-shade {
 	background-color: #858585;
 	color: #000000;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade nav {
-	background-color: #858585;
+	background-color: #3f3f3f;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade .sidebar {
-	background-color: #858585;
+	background-color: #3f3f3f;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade .sidebar-list-item:hover {
 	background-color: #ff9000;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade .sidebar-link {
 	color: #ffffff;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade .contact form {
 	background-color: #868686;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-shade footer {
-	background-color: #858585;
+	background-color: #3f3f3f;
+	transition: 1.5s ease-in-out;
 }
 
 /**?Dark */
 .theme-dark {
 	background-color: #000000;
 	color: #ffffff;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark nav {
 	background-color: #000000;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark .sidebar {
 	background-color: #111111;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark .sidebar-list-item:hover {
 	background-color: #ff9000;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark .sidebar-link {
 	color: #ffffff;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark .connect-links a {
 	padding: 0.2em;
 	background-color: snow;
 	border-radius: 39px;
-	transition: 0.5s ease-in-out;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark .contact form {
 	background-color: #131313;
+	transition: 1.5s ease-in-out;
 }
 
 .theme-dark footer {
 	background-color: #000000;
+	transition: 1.5s ease-in-out;
 }
 
 /*TODO APP */
@@ -159,14 +180,39 @@ body {
 
 @media (max-width: 2440px) {
 	.rotate {
-		animation: marquee 50s linear infinite;
+		animation: marquee 90s linear infinite;
 		transition: animation linear;
 	}
 }
 
-@media (min-width: 1450) {
+@media (min-width: 1450px) {
+	.sidebar.open {
+		font-size: 1.2vw;
+	}
 	.sidebar-link .icon {
-		font-size: 2.1vw;
+		font-size: 1.5vw;
+	}
+}
+
+@media (max-width: 1200px) {
+	.sidebar.open {
+		font-size: 0.9vw;
+		width: 15% !important;
+	}
+
+	.sidebar.open .channel-logo {
+		height: 3.5vh !important;
+	}
+
+	.sidebar {
+		font-size: 0.9vw;
+	}
+	.sidebar-link .icon {
+		font-size: 2.5vw;
+	}
+
+	.sidebar-list-item .hidden-sidebar {
+		font-size: 0.9vw;
 	}
 }
 
@@ -205,12 +251,16 @@ body {
 @media (max-width: 875px) {
 	.wel-row {
 		justify-content: space-evenly;
-		margin-left: 10vw !important;
+		margin-left: 6vw !important;
 	}
 
 	.wel-row a i {
 		justify-content: space-evenly;
 		margin: 3vh 0 0 3vw;
+	}
+
+	.welcome-vid {
+		height: 90vh;
 	}
 }
 
@@ -622,7 +672,7 @@ nav {
 
 .sidebar.open .channel-logo {
 	width: 3.3vw;
-	height: 90px;
+	height: 10vh;
 	margin-top: 1rem;
 	text-align: center;
 }

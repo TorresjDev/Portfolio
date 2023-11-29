@@ -19,8 +19,9 @@
 
 .rotate {
 	display: flex;
-	animation: marquee 36s linear infinite;
+	animation: marquee 90s linear infinite;
 	position: absolute;
+	transition: animation ease-in;
 	white-space: nowrap;
 	top: 0;
 }
