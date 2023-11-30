@@ -1,7 +1,6 @@
 /**?Light */
 .theme-light {
 	background-color: snow;
-	color: black;
 	transition: 1.2s ease-in-out;
 }
 
@@ -11,6 +10,7 @@
 	background-color: #f2eeee;
 }
 
+.theme-light,
 .theme-light .sidebar-link {
 	color: #000000;
 }
@@ -55,7 +55,6 @@
 /**?Dark */
 .theme-dark {
 	background-color: #111111;
-	color: #ffffff !important;
 	transition: 1.2s ease-in-out;
 }
 
@@ -69,8 +68,9 @@
 	-webkit-text-stroke: 0.09px #ffffff;
 }
 
+.theme-dark,
 .theme-dark .sidebar-link {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .theme-dark .connect-links a {
@@ -412,8 +412,7 @@ nav {
 
 .dropbox:hover {
 	color: #c0c0c0;
-	-webkit-text-stroke: 1px #820000;
-	transition: -webkit-text-stroke 0.9s ease-in-out;
+	-webkit-text-stroke: #820000;
 }
 /* ! */
 /*TODO SideBar */
@@ -427,9 +426,7 @@ nav {
 	padding-top: 1rem;
 	align-items: center;
 	justify-content: stretch;
-	transition: width var(--animation-duration) var(--animation-timing-curve);
-	transition: 1.5s ease-in-out;
-
+	transition: 1s ease-in-out;
 	position: sticky;
 	left: 0;
 	top: var(--header-height);
@@ -439,16 +436,28 @@ nav {
 	display: none;
 }
 
+.sidebar .top-sidebar {
+	height: 30px;
+	transition: 300ms ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .sidebar .hidden-sidebar {
 	opacity: 0;
 	width: 0;
 	transition: opacity var(--animation-duration) var(--animation-timing-curve);
 }
 
-.sidebar .top-sidebar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.sidebar .top-sidebar .hidden-sidebar {
+	text-align: center;
+	width: 100%;
+}
+
+.sidebar .channel-logo {
+	height: 30px;
+	transition: var(--animation-duration) var(--animation-timing-curve);
 }
 
 .channel-symbol {
@@ -464,9 +473,45 @@ nav {
 	transition: -webkit-text-stroke 100ms ease-in-out;
 }
 
-.sidebar .channel-logo {
-	height: 30px;
-	transition: var(--animation-duration) var(--animation-timing-curve);
+.sidebar.open {
+	width: 12%;
+	padding: 0;
+	transition: 600ms ease-in-out;
+}
+
+.sidebar.open .top-sidebar {
+	height: 125px;
+}
+
+.sidebar.open .hidden-sidebar {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	margin: auto 2em auto 0.5em;
+}
+
+.sidebar.open .sidebar-link {
+	justify-content: flex-start;
+	margin: 0 0 0 -0.6em;
+}
+
+.sidebar.open .middle-sidebar,
+.sidebar.open .bottom-sidebar {
+	width: 100%;
+	padding: 0.5rem 0;
+}
+
+.sidebar.open .channel-logo {
+	width: 3.3vw;
+	height: 10vh;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.sidebar.open .channel-symbol {
+	cursor: pointer;
+	padding-top: 25%;
+	padding-right: 20%;
 }
 
 .middle-sidebar,
@@ -474,7 +519,7 @@ nav {
 	overflow-y: auto;
 	overflow-x: hidden;
 	flex-grow: 1;
-	transition: 0.3s ease-in-out;
+	transition: 0.1s ease-in-out;
 	scroll-behavior: smooth;
 }
 
@@ -488,21 +533,9 @@ nav {
 	margin-bottom: 0.3vh;
 }
 
-.sidebar.open .middle-sidebar,
-.sidebar.open .bottom-sidebar {
-	width: 100%;
-	padding: 0.5rem 0;
-}
-
 .bottom-sidebar:hover,
 .bottom-sidebar .hidden-sidebar:hover {
-	transition: color 0.3s ease-in-out;
-}
-
-.sidebar.open .channel-symbol {
-	cursor: pointer;
-	padding-top: 25%;
-	padding-right: 20%;
+	transition: color 300ms ease-in-out;
 }
 
 .sidebar-list {
@@ -519,7 +552,7 @@ nav {
 .sidebar-list .sidebar-link:hover,
 .sidebar-list .hidden-sidebar:hover {
 	color: #820000;
-	transition: color 0.45s ease-in-out;
+	transition: color 300ms ease-in-out;
 }
 
 .sidebar-link {
@@ -559,57 +592,12 @@ nav {
 	position: absolute;
 }
 
-.your-channel {
-	color: var(--dark-gray);
-	font-size: 0.75rem;
-	font-weight: bold;
-	margin-bottom: 0.15rem;
-}
-
 .channel-name {
 	align-self: start;
 	font-size: 0.75rem;
 	font-weight: bold;
 }
 
-.sidebar .top-sidebar {
-	height: 30px;
-	transition: height var(--animation-duration) var(--animation-timing-curve);
-}
-
-.sidebar.open {
-	width: 12%;
-	padding: 0;
-	transition: width var(--animation-duration) var(--animation-timing-curve);
-}
-
-.sidebar.open .top-sidebar {
-	height: 125px;
-}
-
-.sidebar .top-sidebar .hidden-sidebar {
-	text-align: center;
-	width: 100%;
-}
-
-.sidebar.open .hidden-sidebar {
-	width: 100%;
-	height: auto;
-	opacity: 1;
-	margin: auto 2em auto 0.5em;
-}
-
-.sidebar.open .channel-logo {
-	width: 3.3vw;
-	height: 10vh;
-	margin-top: 1rem;
-	text-align: center;
-}
-
-.sidebar.open .sidebar-link {
-	justify-content: flex-start;
-	margin: 0 0 0 -0.6em;
-}
 /* ! */
 /*TODO Footer */
 footer {

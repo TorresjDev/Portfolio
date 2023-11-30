@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Jesus Torres - Software Engineer Portfolio 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+Welcome to my personal project portfolio. 🌟 This repository showcases my skills and projects as a Full-Stack Software Developer.
 
-In the project directory, you can run:
+## About the Project 📖
 
-### `npm start`
+This project is a comprehensive portfolio website built using React. It features a dynamic and responsive user interface, showcasing my previous work, skills, and professional details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Visit the Website:**
+[![](https://img.shields.io/badge/live-site-blue)](https://torresjdev.github.io/Portfolio/) <-- _click me_
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### Key Features ✨
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Interactive UI**: The website is built with React, offering a dynamic user experience. 🖥️
+- **Responsive Design**: Ensures a seamless experience across various devices and screen sizes. 📱💻
+- **Theme Customization**: Users can switch between light, shade, and dark themes. 🌗
+- **Smooth Navigation**: Easy navigation through the website with a sidebar and navigation bar. 🧭
 
-### `npm run build`
+### Technologies Used 🛠️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- CSS3
+- HTML5
+- JavaScript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sections 📚
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Welcome Video**: Introduces visitors to the portfolio with a welcoming video and quick links. 🎥
+2. **Skill Rotator**: Dynamically displays my technical skills. 💡
+3. **Previous Work**: A showcase of my past projects and accomplishments. 🏆
+4. **Connect**: A section for visitors to connect with me on professional networks like LinkedIn. 🔗
+5. **Contact**: Allows visitors to contact me directly through the website. 📬
 
-### `npm run eject`
+## Setup and Installation 🔧
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository to your local machine. 📥
+2. Navigate to the project directory. 📁
+3. Install dependencies with `npm install`. 📦
+4. Run the application using `npm start`. 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact Information 📞
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **LinkedIn**: [Jesus Torres](https://www.linkedin.com/in/torresdev/) 👨‍💼
+- **GitHub**: [TorresjDev](https://github.com/TorresjDev) 🌐
+- **Download Resume**: [Software Engineer - Jesus Torres](link-to-resume) 📄
 
-## Learn More
+Feel free to reach out to me for collaborations or any questions! 💬
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my project portfolio! 🙏

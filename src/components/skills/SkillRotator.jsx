@@ -1,6 +1,6 @@
 import React from "react";
 import "./skill.css";
-import Tooltip from "../tooltip/Tooltip";
+import Skill from "./Skill";
 
 const SkillRotator = React.forwardRef((props, ref) => {
 	const skills = [
@@ -60,12 +60,7 @@ const SkillRotator = React.forwardRef((props, ref) => {
 	const doubledSkills = [...skills, ...skills, ...skills];
 
 	const skillElements = doubledSkills.map((skill, index) => {
-		return (
-			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank" rel="noreferrer">
-				<img src={skill.img} alt={skill.name} height="45" />
-				<Tooltip content={skill.name} />
-			</a>
-		);
+		return <Skill skill={skill} index={index} />;
 	});
 
 	return (

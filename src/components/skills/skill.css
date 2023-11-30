@@ -47,22 +47,8 @@
 	transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.tooltip {
-	position: sticky;
-	bottom: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #555;
-	color: white;
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 6px;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.3s;
-}
-
 .skill:hover .tooltip {
 	visibility: visible;
+	margin-left: 1vw;
 	opacity: 1;
 }
