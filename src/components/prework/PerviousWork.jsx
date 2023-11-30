@@ -9,22 +9,22 @@ function PerviousWork() {
 				title: "Photo Gallery",
 				description: "css project adjusting image to fit screen",
 				img: "https://i.ibb.co/wJw2KcP/picture-page.jpg",
-				liveLink: "http://",
-				githubLink: "http://"
+				liveLink: "https://codepen.io/TorresjDev/pen/abKwMJO",
+				githubLink: "https://github.com/TorresjDev/Projects/tree/main/FrontEnd/Picture-Page"
 			},
 			{
 				title: "Article Project",
 				description: "Article using html, css, js for declaration of independence",
 				img: "https://i.ibb.co/jw55Bp8/magazine.jpg",
-				liveLink: "http://",
-				githubLink: "http://"
+				liveLink: "https://codepen.io/TorresjDev/pen/MWXoRWa",
+				githubLink: "https://github.com/TorresjDev/Projects/tree/main/FrontEnd/Magazine"
 			},
 			{
 				title: "Random Quote Generator",
 				description: "using html, css and javascript to generate random quotes.",
 				img: "https://i.ibb.co/GP3dq4c/random-quote.jpg",
-				liveLink: "http://",
-				githubLink: "http://"
+				liveLink: "https://codepen.io/TorresjDev/pen/yLjWZWP",
+				githubLink: "https://github.com/TorresjDev/Projects/tree/main/FrontEnd/Random-Quotes"
 			}
 		],
 		projectComponents: [],

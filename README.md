@@ -46,9 +46,9 @@ To run this project locally, follow these steps:
 
 ## Contact Information 📞
 
-- **LinkedIn**: [Jesus Torres](https://www.linkedin.com/in/torresdev/) 👨‍💼
+- **LinkedIn**: [Jesus Torres](https://www.linkedin.com/in/torresjdev/) 👨‍💼
 - **GitHub**: [TorresjDev](https://github.com/TorresjDev) 🌐
-- **Download Resume**: [Software Engineer - Jesus Torres](link-to-resume) 📄
+- **Download Resume**: [Software Engineer - Jesus Torres](https://github.com/TorresjDev/Portfolio/blob/main/public/Software-Engineer-Jesus-Torres.pdf) 📄
 
 Feel free to reach out to me for collaborations or any questions! 💬
 
