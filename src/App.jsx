@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
 import SiteNav from "./components/SiteNav";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
@@ -20,6 +19,7 @@ function App() {
 	}, [theme]);
 
 	const contactRef = useRef(null);
+	const skillRotatorRef = useRef(null);
 
 	const toggleSidebar = () => {
 		setIsSidebarOpen(true);
@@ -29,25 +29,32 @@ function App() {
 		setIsSidebarOpen(false);
 	};
 
-	const scrollOnClick = () => {
-		console.log("scrollOnClick", contactRef);
+	const scrollToContact = () => {
+		console.log("scrollToContact", contactRef);
 		contactRef.current.scrollIntoView({ behavior: "smooth" });
+	};
+
+	const scrollToProjects = () => {
+		console.log("scrollToContact", contactRef);
+
+		skillRotatorRef.current.scrollIntoView({ behavior: "smooth" });
 	};
 
 	return (
 		<div className={`container-fluid app ${theme.color}`}>
-			<SiteNav scrollContact={scrollOnClick} />
+			<SiteNav clickToContact={scrollToContact} />
 			<div className="app-body">
 				<SideBar
 					isOpen={isSidebarOpen}
 					toggleSidebar={toggleSidebar}
 					closeSidebar={closeSidebar}
-					scrollOnClick={scrollOnClick}
+					clickToContact={scrollToContact}
+					clickToProjects={scrollToProjects}
 					setTheme={setTheme}
 				/>
 				<main className={isSidebarOpen ? "pages open" : "pages"}>
-					<WelcomeVideo scrollContact={scrollOnClick} />
-					<SkillRotator />
+					<WelcomeVideo clickToContact={scrollToContact} />
+					<SkillRotator ref={skillRotatorRef} />
 					<PerviousWork />
 					<section className="my-3">
 						<Connect />
@@ -58,9 +65,6 @@ function App() {
 				</main>
 			</div>
 			<Footer id="footer" />
-			<Routes>
-				<Route path="/contact" component={<Contact />} />
-			</Routes>
 		</div>
 	);
 }

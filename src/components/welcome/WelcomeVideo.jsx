@@ -2,7 +2,7 @@ import React from "react";
 import welVid from "../../vid/sunrise.mp4";
 import "./welcome.css";
 
-function WelcomeVideo({ scrollContact }) {
+function WelcomeVideo({ clickToContact }) {
 	return (
 		<div className="welcome-vid">
 			<div className="content">
@@ -31,7 +31,7 @@ function WelcomeVideo({ scrollContact }) {
 								<i className="fab fa-github"></i>
 							</a>
 						</div>
-						<div className="my-2 col-lg-3 col-md-3 col-sm-4" onClick={scrollContact}>
+						<div className="my-2 col-lg-3 col-md-3 col-sm-4" onClick={clickToContact}>
 							<div className="btn btn-outline-secondary contact-me">Contact Me</div>
 						</div>
 					</div>

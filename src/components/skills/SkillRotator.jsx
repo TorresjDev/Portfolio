@@ -2,7 +2,7 @@ import React from "react";
 import "./skill.css";
 import Tooltip from "../tooltip/Tooltip";
 
-function SkillRotator() {
+const SkillRotator = React.forwardRef((props, ref) => {
 	const skills = [
 		{
 			name: "HTML5",
@@ -56,12 +56,12 @@ function SkillRotator() {
 			img: "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
 		}
 	];
-
+	false && console.log(props);
 	const doubledSkills = [...skills, ...skills, ...skills];
 
 	const skillElements = doubledSkills.map((skill, index) => {
 		return (
-			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank">
+			<a key={`${skill.name}-${index}`} className="skill" href={skill.link} target="_blank" rel="noreferrer">
 				<img src={skill.img} alt={skill.name} height="45" />
 				<Tooltip content={skill.name} />
 			</a>
@@ -69,10 +69,10 @@ function SkillRotator() {
 	});
 
 	return (
-		<div className="skill-rotator-container bg-light">
+		<div ref={ref} className="skill-rotator-container bg-light">
 			<div className="rotate py-auto my-auto">{skillElements}</div>
 		</div>
 	);
-}
+});
 
 export default SkillRotator;

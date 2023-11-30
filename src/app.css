@@ -5,16 +5,10 @@
 	transition: 1.2s ease-in-out;
 }
 
-.theme-light nav {
-	background-color: #cacaca;
-}
-
-.theme-light .sidebar {
-	background-color: #cacaca;
-}
-
-.theme-light .sidebar-list-item:hover {
-	background-color: #ffffffde !important;
+.theme-light nav,
+.theme-light .sidebar,
+.theme-light footer {
+	background-color: #f2eeee;
 }
 
 .theme-light .sidebar-link {
@@ -23,10 +17,6 @@
 
 .theme-light .contact form {
 	background-color: #f2f7f7;
-}
-
-.theme-light footer {
-	background-color: #cacaca;
 }
 
 .bottom-sidebar .light:hover,
@@ -42,11 +32,9 @@
 	transition: 1.2s ease-in-out;
 }
 
-.theme-shade nav {
-	background-color: #3f3f3f;
-}
-
-.theme-shade .sidebar {
+.theme-shade nav,
+.theme-shade .sidebar,
+.theme-shade footer {
 	background-color: #3f3f3f;
 }
 
@@ -58,10 +46,6 @@
 	background-color: #868686;
 }
 
-.theme-shade footer {
-	background-color: #3f3f3f;
-}
-
 .bottom-sidebar .shade:hover,
 .bottom-sidebar .shade .hidden-sidebar:hover {
 	color: #676363;
@@ -70,17 +54,15 @@
 
 /**?Dark */
 .theme-dark {
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #111111;
+	color: #ffffff !important;
 	transition: 1.2s ease-in-out;
 }
 
-.theme-dark nav {
+.theme-dark nav,
+.theme-dark .sidebar,
+.theme-dark footer {
 	background-color: #000000;
-}
-
-.theme-dark .sidebar {
-	background-color: #111111;
 }
 
 .theme-dark .channel-symbol {
@@ -100,10 +82,6 @@
 
 .theme-dark .contact form {
 	background-color: #131313;
-}
-
-.theme-dark footer {
-	background-color: #000000;
 }
 
 .bottom-sidebar .dark:hover,
@@ -573,7 +551,7 @@ nav {
 }
 
 .sidebar-list-item:hover {
-	background-color: #cbcbcbcb;
+	background-color: #fffffff4;
 	transition: 500ms ease-in-out;
 }
 
