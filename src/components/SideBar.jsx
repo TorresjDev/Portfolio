@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme }) {
+function SideBar({ isOpen, toggleSidebar, closeSidebar, clickToContact, clickToProjects, setTheme }) {
 	return (
 		<aside className={isOpen ? "sidebar open" : "sidebar"} onMouseLeave={closeSidebar}>
 			<div className="top-sidebar">
@@ -35,7 +35,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 						</a>
 					</li>
 					<li className="sidebar-list-item">
-						<Link to="" className="sidebar-link">
+						<Link to="" className="sidebar-link" onClick={clickToProjects}>
 							<div className="material-symbols-outlined icon" title="">
 								add_task
 							</div>
@@ -43,7 +43,7 @@ function SideBar({ isOpen, toggleSidebar, closeSidebar, scrollOnClick, setTheme 
 						</Link>
 					</li>
 					<li className="sidebar-list-item">
-						<div className="sidebar-link" onClick={scrollOnClick}>
+						<div className="sidebar-link" onClick={clickToContact}>
 							<div className="material-symbols-outlined icon" title="">
 								perm_contact_calendar
 							</div>
