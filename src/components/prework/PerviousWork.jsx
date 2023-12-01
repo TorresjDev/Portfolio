@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./prework.css";
+import CarouselItem from "../carousel/CarouselItem";
 import Carousel from "../carousel/Carousel";
 
 function PerviousWork() {
@@ -25,6 +26,14 @@ function PerviousWork() {
 				img: "https://i.ibb.co/GP3dq4c/random-quote.jpg",
 				liveLink: "https://codepen.io/TorresjDev/pen/yLjWZWP",
 				githubLink: "https://github.com/TorresjDev/Projects/tree/main/FrontEnd/Random-Quotes"
+			},
+			{
+				title: "The Institute to Advance Diversity",
+				description:
+					"an online platform connecting individuals with mentors nationwide for personal growth, entrepreneurship, and career advice.",
+				img: "https://i.ibb.co/hRcPW2t/advdiv.png",
+				liveLink: "https://advancingdiversity.azurewebsites.net/",
+				githubLink: "https://github.com/TorresjDev/AdvDiversity"
 			}
 		],
 		projectComponents: [],
@@ -43,34 +52,13 @@ function PerviousWork() {
 	}, [preWork.projectsIsMapped]);
 
 	const carouselWork = (data, index) => {
-		return <Carousel data={data} index={index} />;
+		return <CarouselItem data={data} index={index} />;
 	};
 
 	return (
 		<div className="pre-work">
 			<h2 className="pre-work-header">Projects</h2>
-			<div id="carousel-preWork" className="carousel slide carousel-fade" data-bs-ride="carousel">
-				<div className="carousel-indicators">
-					<button
-						type="button"
-						data-bs-target="#carousel-preWork"
-						data-bs-slide-to="0"
-						className="active"
-						aria-label="Slide 1"
-					></button>
-					<button type="button" data-bs-target="#carousel-preWork" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carousel-preWork" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
-				<div className="carousel-inner">{preWork.projectsIsMapped && preWork.projectComponents}</div>
-				<button className="carousel-control-prev" type="button" data-bs-target="#carousel-preWork" data-bs-slide="prev">
-					<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span className="visually-hidden">Previous</span>
-				</button>
-				<button className="carousel-control-next" type="button" data-bs-target="#carousel-preWork" data-bs-slide="next">
-					<span className="carousel-control-next-icon" aria-hidden="true"></span>
-					<span className="visually-hidden">Next</span>
-				</button>
-			</div>
+			<Carousel toggleShow={preWork.projectsIsMapped} displayItems={preWork.projectComponents} />
 		</div>
 	);
 }

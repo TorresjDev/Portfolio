@@ -1,42 +1,36 @@
 import React from "react";
-import Tooltip from "../tooltip/Tooltip";
-import "./carousel.css";
 
-function Carousel({ data, index }) {
-	console.log("Carousel", { data, index });
+function Carousel(props) {
+	console.log({ props });
 
 	return (
-		<div
-			className={`carousel-item mt-1 ${index === 0 ? "active" : ""}`}
-			data-bs-interval="3000"
-			key={`${index}) ${data.title} - ${Date.now()}`}
-		>
-			<img src={data.img} className=" mx-auto d-block rounded" alt="..." />
-			<div className="carousel-caption">
-				<div className="row caption">
-					<div className="col-md-1">
-						<a href={data.liveLink} rel="noreferrer" target="_blank" className="live-demo">
-							<div className="material-symbols-outlined icon" title="live demo">
-								open_in_new
-								<Tooltip content={"live demo"} />
-							</div>
-						</a>
-					</div>
-					<div className="col-md-8">
-						<h5>{data.title}</h5>
-						<p>{data.description}</p>
-					</div>
-					<div className="col-md-1">
-						<a href={data.githubLink} rel="noreferrer" target="_blank" className="git-rep-link" title="git code">
-							<i className="fab fa-github icon">
-								<Tooltip content={"git code"} />
-							</i>
-						</a>
-					</div>
-				</div>
+		<div id="carousel-preWork" className="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div className="carousel-indicators">
+				{props.toggleShow &&
+					props.displayItems.map((item, index) => {
+						return (
+							<button
+								key={index + Date.now()}
+								type="button"
+								className={index === 1 ? "active" : ""}
+								data-bs-target="#carousel-preWork"
+								data-bs-slide-to={index}
+								aria-label={`Slide ${index - 1}`}
+							></button>
+						);
+					})}
 			</div>
+			<div className="carousel-inner">{props.toggleShow && props.displayItems}</div>
+			<button className="carousel-control-prev" type="button" data-bs-target="#carousel-preWork" data-bs-slide="prev">
+				<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span className="visually-hidden">Previous</span>
+			</button>
+			<button className="carousel-control-next" type="button" data-bs-target="#carousel-preWork" data-bs-slide="next">
+				<span className="carousel-control-next-icon" aria-hidden="true"></span>
+				<span className="visually-hidden">Next</span>
+			</button>
 		</div>
 	);
 }
 
-export default React.memo(Carousel);
+export default Carousel;
