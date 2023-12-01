@@ -80,6 +80,10 @@
 	transition: 1.5s ease-in-out;
 }
 
+.theme-dark .connect-links a:hover {
+	background-color: #ff9000 !important;
+}
+
 .theme-dark .contact form {
 	background-color: #131313;
 }
@@ -187,6 +191,11 @@
 }
 
 @media (max-width: 875px) {
+	.sidebar.open {
+		font-size: 0.6vw;
+		width: 18% !important;
+	}
+
 	.wel-row {
 		justify-content: space-evenly;
 		margin-left: 6vw !important;
@@ -225,7 +234,7 @@
 
 	.wel-row {
 		justify-content: space-evenly;
-		margin-left: 12vw !important;
+		margin-left: 9vw !important;
 	}
 
 	.wel-row a i {
@@ -255,12 +264,43 @@
 		justify-content: space-evenly;
 		margin-bottom: 0em;
 	}
+
+	.connect-details {
+		font-size: 5.5vw !important;
+	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
+	.sidebar.open {
+		font-size: 0.3vw;
+		width: 20% !important;
+	}
+
 	.welcome-vid .title {
 		margin-left: 9vw;
 	}
+
+	.pages {
+		width: 90% !important;
+	}
+
+	.content {
+		margin-left: 3vw !important;
+	}
+
+	.wel-row {
+		margin-left: 1.5vw !important;
+	}
+
+	.open .wel-row {
+		margin-left: 5vw !important;
+	}
+
+	/* .pages {
+    width: 80.5%;
+    margin-left: 4.2vw;
+    left: 0;
+} */
 }
 
 @media (man-height: 580px) {
