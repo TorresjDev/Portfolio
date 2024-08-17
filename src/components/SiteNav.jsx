@@ -1,5 +1,5 @@
 import React from "react";
-import devLogo from "../images/dev-logo.jpg";
+import devLogo from "../images/dev-logo-enhanced.png";
 
 function SiteNav({ clickToContact }) {
 	return (
@@ -16,7 +16,7 @@ function SiteNav({ clickToContact }) {
 					</div>
 					<div className="user-navbar mx-1 ">
 						<div className="dropdown">
-							<button className="dropbox">
+							<button className="dropbox" type="button">
 								<div className="material-symbols-outlined" title="" style={{ padding: "3px 3px 1px 2px" }}>
 									dropdown
 								</div>
