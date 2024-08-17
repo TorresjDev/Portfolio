@@ -41,7 +41,7 @@ const Contact = React.forwardRef((props, ref) => {
 
 	return (
 		<div className="container-fluid mb-3 contact">
-			<form className="p-3 mt-2 shadow border-2 rounded fw-bold" ref={ref} onSubmit={sendEmail}>
+			<form className="p-3 mt-2 shadow border border-black rounded fw-bold" ref={ref} onSubmit={sendEmail}>
 				<h2>Contact Me 👇</h2>
 				<div className="row pt-2 mx-auto">
 					<div className="col-lg-4 col-md-5 col-sm-8">

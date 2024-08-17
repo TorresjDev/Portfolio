@@ -7,7 +7,7 @@
 	height: 99.99%;
 	object-fit: fill;
 	border-radius: 3px;
-	border: 6px groove #170000;
+	border: 4px groove var(--dark-maroon);
 	float: left;
 	transition: object-fit 0.5s ease-in-out;
 }
@@ -44,32 +44,38 @@
 }
 
 .content p {
-	color: silver;
+	color: var(--silver);
 	font-weight: bolder;
 	font-size: 3vw;
-	text-shadow: 1px 1px#170000;
 	font-family: "Silkscreen";
-	text-shadow: -2px 3px #170000, 4px -2px #170000, 4px -2px #170000, 4px -2px #170000;
+	text-shadow: -2px 3px var(--dark-maroon), 4px -2px var(--dark-maroon), 4px -2px var(--dark-maroon), 4px -2px var(--dark-maroon);
 	text-decoration: underline;
 }
 
 .content .resume,
 .content .contact-me {
 	border-radius: 6px 6px 6px 6px;
-	border: 3px groove #170000;
+	border: 3px groove var(--dark-maroon);
 	font-family: "Silkscreen";
-	font-size: 0.82vw;
+	font-size: 1vw;
+	font-weight: 600;
 }
 
 .content a i {
 	color: maroon;
-	margin-top: 9px;
-	font-size: 2vw;
-	text-shadow: 2px 2px 1px #2a2a2a;
+	margin-top: 1vh;
+	font-size: 2.4vw;
+	position: relative;
+	text-shadow: 2px 2px 1px var(--dark-gray);
 }
 
 .content a i:hover {
-	color: silver;
+	color: var(--light-silver);
+	font-size: 2.8vw;
+	 /* position: fixed; */
+/*	top: 76%;
+	transition: 70ms ease; */
+
 }
 
 .wel-row {

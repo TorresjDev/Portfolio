@@ -1,37 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond&family=Inspiration&family=Ledger&family=Pacifico&family=Shadows+Into+Light&family=Silkscreen:wght@400;700&display=swap");
 
 :root {
-	--accent-color: rgb(82, 0, 0);
-	--lightest-gray: rgb(244, 244, 244);
-	--light-gray: rgb(144, 144, 144);
-	--medium-gray: rgb(96, 96, 96);
-	--dark-gray: rgb(13, 13, 13);
 	--header-height: 40px;
-	--animation-duration: 500ms;
-	--animation-timing-curve: ease-in-out;
+	--srt-dur-time: 500ms;
+	--short-smooth-trans: 750ms ease-in-out;
+	--mid-smooth-trans: 750ms ease-in-out;
+	--long-smooth-trans: 3s ease-out;
+	--white: #ffffff;
+	--snow: #e6e6e6;
+	--silver: #c0c0c0;
+	--light-silver: #eeeeee;
+	--light-gold: #fffac9;
+	--light-goldenrod: #ffde38;
+	--gold: #edca00;
+	--goldenrod: #f0b215;
+	--deep-gold: #d69e0f;
+	--deep-goldenrod: #f9b300;
+	--dark-goldenrod: #c58a0b;
+	--light-maroon: #a82222;
+	--maroon: #820000;
+	--deep-maroon: #5b0000;
+	--dark-blood: #540000;
+	--dark-maroon: #240000;
+	--deep-silver: #8b8b8b;
+	--dark-silver: #636262;
+	--light-gray: #909090;
+	--medium-gray: #606060;
+	--dark-gray: #212121;
+	--black: #000000;
 }
 
 ::-webkit-scrollbar {
 	width: 1.2rem;
-	background: #3c3c3c;
+	background: var(--dark-gray);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #b3b3b3;
-	border-radius: 39px;
+	background: var(--light-silver);
+	border-radius: 3px;
 	width: 0.9rem;
-	border: 2px solid #000000;
+	border: 3px groove var(--black);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #b3b3b3;
+	background: var(--light-silver);
 	width: 1rem;
-	border: 2px solid #828282;
+	border: 2px solid var(--dark-gray);
 	transition: 150ms ease-in-out;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
 /*? google fonts */
@@ -43,8 +63,9 @@ html,
 body {
 	margin: 0;
 	scroll-behavior: smooth !important;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-		"Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transition: background-color 300ms ease, color 600ms ease;
